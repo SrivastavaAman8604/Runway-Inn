@@ -155,11 +155,11 @@ const Home = () => {
                 className="col col-md-3 animate-box"
                 data-animate-effect="fadeInUp"
                 >
-                <img
+                  {/* <img
                     src="img/images/Gallery Edited/2-1.png"
                     alt=""
                     className="mt-90 mb-30"
-                />
+                />*/}
                 </div>
                 <div
                 className="col col-md-3 animate-box"
