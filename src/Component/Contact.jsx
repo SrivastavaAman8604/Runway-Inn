@@ -45,6 +45,13 @@ const Contact = () => {
         <div className="container">
         <div className="row">
             <div className="col-md-12 text-left caption mt-90">
+                <span>
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                </span>
             <h5>Get in touch</h5>
             <h1>Contact Us</h1>
             </div>
