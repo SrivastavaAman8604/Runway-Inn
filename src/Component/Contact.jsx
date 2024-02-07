@@ -61,7 +61,7 @@ const Contact = () => {
     {/* Contact */}
     <section className="contact section-padding">
         <div className="container">
-        <div className="row mb-90">
+        <div className="row">
             <div className="col-md-6 mb-60">
             <h3>The Runway Inn Luxury Hotel</h3>
             <p>
