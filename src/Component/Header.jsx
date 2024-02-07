@@ -2,6 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Optional: smooth scrolling behavior
+    });
+  };
+
   return (
     
     <nav className="navbar navbar-expand-lg">
@@ -10,7 +18,7 @@ const Header = () => {
     <div className="logo-wrapper">
       <Link className="logo" to="/">
         {" "}
-        <img src="img/runnway.png" className="logo-img" alt="" />{" "}
+        <img src="img/runnway.png" className="logo-img link" alt="" />{" "}
       </Link>
       {/* <a class="logo" href="index.html"> <h2>THE Runway Inn <span>Luxury Hotel</span></h2> </a> */}
     </div>
@@ -32,7 +40,7 @@ const Header = () => {
     {/* Menu */}
     <div className="collapse navbar-collapse" id="navbar">
       <ul className="navbar-nav ms-auto">
-        <li className="nav-item dropdown">
+        <li className="nav-item dropdown" onClick={scrollToTop}>
           {" "}
           <Link
             className="nav-link link dropdown-toggle"
@@ -41,6 +49,7 @@ const Header = () => {
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
             aria-expanded="false"
+            
           >
             Home
             {/* <i class="ti-angle-down"></i> */}
@@ -63,12 +72,12 @@ const Header = () => {
                       <li><a href="index15.html" class="dropdown-item"><span>Grid Background 2</span></a></li>
                   </ul>      */}
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={scrollToTop}>
           <Link className="nav-link link" to="/About">
             About
           </Link>
         </li>
-        <li className="nav-item dropdown">
+        <li className="nav-item dropdown" onClick={scrollToTop}>
           {" "}
           <Link className="nav-link link dropdown-toggle" to="/Room">
             Rooms &amp; Suites
@@ -81,7 +90,7 @@ const Header = () => {
                       <li><a href="room-details.html" class="dropdown-item"><span>Room Details</span></a></li>
                   </ul> */}
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={scrollToTop}>
           <Link className="nav-link link" to="/Restaurant">
             Restaurant
           </Link>
@@ -113,7 +122,7 @@ const Header = () => {
                       <li><a href="news2.html" class="dropdown-item"><span>News 2</span></a></li>
                       <li><a href="/" class="dropdown-item"><span>Post Page</span></a></li>
                   </ul> */}
-        <li className="nav-item">
+        <li className="nav-item" onClick={scrollToTop}>
           <Link className="nav-link link" to="/Contact">
             Contact
           </Link>
