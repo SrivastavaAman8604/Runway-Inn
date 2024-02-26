@@ -1090,7 +1090,7 @@ color: #aa8453;
     .navbar button {
         margin-right: 0px;
         outline: none !important;
-        background: transparent;
+/*         background: transparent; */
         margin-top: 10px;
         border: none;
     }
