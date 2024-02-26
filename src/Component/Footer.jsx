@@ -39,14 +39,14 @@ const Footer = () => {
                         <Link to="/">Home</Link>
                     </li>
                     <li className='link' onClick={scrollToTop}>
-                        <Link to="/Room">Rooms &amp; Suites</Link>
+                        <Link to="/Room">Rooms &amp; Banquet</Link>
                     </li>
                     <li className='link' onClick={scrollToTop}>
-                        <Link to="/Restaurant">Restaurant</Link>
+                        <Link to="/Restaurant">Dinning</Link>
                     </li>
                     {/* <li><Link to="/">Spa & Wellness</Link></li> */}
                     <li className='link' onClick={scrollToTop}>
-                        <Link to="/About">About Hotel</Link>
+                        <Link to="/Tariff">Tariff</Link>
                     </li>
                     <li className='link' onClick={scrollToTop}>
                         <Link to="/Contact">Contact</Link>
