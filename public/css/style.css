@@ -5490,4 +5490,7 @@ select {
     .video-fullscreen-wrap .caption {
         text-align: center;
     }
+	.pricing-card .amount {
+    font-size: 35px;
+	}
 }
