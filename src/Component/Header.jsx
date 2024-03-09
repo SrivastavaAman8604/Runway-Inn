@@ -83,10 +83,10 @@ const Header = () => {
             <i className="ti-angle-down"></i>
           </Link>
           <ul className="dropdown-menu">
-            <li><Link to="/" className="dropdown-item"><span>Business Class</span></Link></li>
-            <li><Link to="/" className="dropdown-item"><span>Family Suite</span></Link></li>
-            <li><Link to="/" className="dropdown-item"><span>Premium Economy</span></Link></li>
-            <li><Link to="/" className="dropdown-item"><span>Maharaja Suite</span></Link></li>
+            <li><Link to="/Room" className="dropdown-item"><span>Business Class</span></Link></li>
+            <li><Link to="/Room" className="dropdown-item"><span>Family Suite</span></Link></li>
+            <li><Link to="/Room" className="dropdown-item"><span>Premium Economy</span></Link></li>
+            <li><Link to="/Room" className="dropdown-item"><span>Maharaja Suite</span></Link></li>
           </ul>
         </li>
         <li className="nav-item" onClick={scrollToTop}>
