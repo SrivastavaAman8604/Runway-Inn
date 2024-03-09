@@ -90,7 +90,7 @@ const Header = () => {
           </ul>
         </li>
         <li className="nav-item" onClick={scrollToTop}>
-          <Link className="nav-link link" to="/Restaurant">
+          <Link className="nav-link link" to="/Banquet">
           Banquets
           </Link>
         </li>
