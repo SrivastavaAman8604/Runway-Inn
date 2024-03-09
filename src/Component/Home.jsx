@@ -393,7 +393,7 @@ const Home = () => {
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">90000₹ / Night</a>
+                        <a href="room-details.html">9000₹ / Night</a>
                     </h6>
                     <h5>
                         <a href="room-details.html">Maharaja Suite</a>
