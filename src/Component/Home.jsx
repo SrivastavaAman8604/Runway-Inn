@@ -252,7 +252,7 @@ const Home = () => {
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">200₹ / Night</a>
+                        <a href="room-details.html">7000₹ / Night</a>
                     </h6>
                     <h5>
                         <a href="room-details.html">Premium Suite</a>
@@ -300,7 +300,7 @@ const Home = () => {
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">250₹ / Night</a>
+                        <a href="room-details.html">5000₹ / Night</a>
                     </h6>
                     <h5>
                         <a href="room-details.html">Business Suite</a>
@@ -345,7 +345,7 @@ const Home = () => {
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">300₹ / Night</a>
+                        <a href="room-details.html">6000₹ / Night</a>
                     </h6>
                     <h5>
                         <a href="room-details.html">Family Suite</a>
@@ -393,7 +393,7 @@ const Home = () => {
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">150₹ / Night</a>
+                        <a href="room-details.html">90000₹ / Night</a>
                     </h6>
                     <h5>
                         <a href="room-details.html">Maharaja Suite</a>
