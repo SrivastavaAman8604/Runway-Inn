@@ -13,7 +13,7 @@ const Tariff = () => {
                 <i className="star-rating" />
                 <i className="star-rating" />
                 <i className="star-rating" />
-                <i className="star-rating" />
+                {/* <i className="star-rating" /> */}
             </span>
             <h5>THE RUNWAY INN HOTEL</h5>
             <h1>Tariff</h1>

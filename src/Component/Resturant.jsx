@@ -41,13 +41,12 @@ const Restaurant = () => {
                     <i className="star-rating" />
                     <i className="star-rating" />
                     <i className="star-rating" />
-                    <i className="star-rating" />
                 </span>
                 <div className="section-subtitle">
                     Unforgettable Cuisine while Dining
                 </div>
                 <div className='d-flex'>
-                    <div className="section-title">Simply Banaras</div>
+                    <div className="section-title">Simply Benares</div>
                     <img src="img/images/restaurant/banaras.png" alt="" className="ms-5 w-25 h-25" />
                 </div>
                 
@@ -89,10 +88,10 @@ const Restaurant = () => {
                     </div>
                     </li>
                 </ul>
-                <h6>Dress Code</h6>
+                {/* <h6>Dress Code</h6>
                 <p>Smart casual (no shorts, hats, or sandals permitted)</p>
                 <h6>Terrace</h6>
-                <p>Open for drinks only</p>
+                <p>Open for drinks only</p> */}
                 </div>
             </div>
             </div>
@@ -496,14 +495,13 @@ const Restaurant = () => {
                     </div>
                     </li>
                 </ul>
-                <h6>Dress Code</h6>
-                <p>Smart casual (no shorts, hats, or sandals permitted)</p>
-                <h6>Terrace</h6>
-                <p>Open for drinks only</p>
+                    {/* <h6>Dress Code</h6>
+                    <p>Smart casual (no shorts, hats, or sandals permitted)</p>
+                    <h6>Terrace</h6>
+                    <p>Open for drinks only</p> */}
                 </div>
                 <div className="col-md-6 text-left">
                 <span>
-                    <i className="star-rating" />
                     <i className="star-rating" />
                     <i className="star-rating" />
                     <i className="star-rating" />

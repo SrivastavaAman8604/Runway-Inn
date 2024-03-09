@@ -17,10 +17,9 @@ const Room = () => {
             <i className="star-rating" />
             <i className="star-rating" />
             <i className="star-rating" />
-            <i className="star-rating" />
           </span>
           <h5>The Runway Inn Hotel</h5>
-          <h1>Rooms &amp; Banquets</h1>
+          <h1>Rooms &amp; Suits</h1>
         </div>
       </div>
     </div>
@@ -89,7 +88,7 @@ const Room = () => {
                 </div> */}
                 <div className="butn-dark">
                   {" "}
-                  <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw==' data-scroll-nav={1}>
+                  <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>
                     <span>Book Now</span>
                   </Link>{" "}
                 </div>
@@ -154,7 +153,7 @@ const Room = () => {
                 </div> */}
                 <div className="butn-dark">
                   {" "}
-                  <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw==' data-scroll-nav={1}>
+                  <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw==' >
                     <span>Book Now</span>
                   </Link>{" "}
                 </div>
@@ -173,7 +172,7 @@ const Room = () => {
                 7000₹ <span>/ Night</span>
               </h3>
               <h4>
-                <a href="/">Premium Economy Suite</a>
+                <a href="/">Premium Economy </a>
               </h4>
               <p>
                 Experience comfort and style in our Premium Economy Suite, offering modern amenities and a relaxing ambiance at an affordable price.
@@ -219,7 +218,7 @@ const Room = () => {
                 </div> */}
                 <div className="butn-dark">
                   {" "}
-                  <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw==' data-scroll-nav={1}>
+                  <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw==' >
                     <span>Book Now</span>
                   </Link>{" "}
                 </div>
@@ -282,7 +281,7 @@ const Room = () => {
                 </div> */}
                 <div className="butn-dark">
                   {" "}
-                  <Link to="https://asiatech.in/booking_engine/index3?token=NjAyNw==" data-scroll-nav={1}>
+                  <Link to="https://asiatech.in/booking_engine/index3?token=NjAyNw==" >
                     <span>Book Now</span>
                   </Link>{" "}
                 </div>

@@ -29,63 +29,73 @@ const Footer = () => {
                                         <option value="#0">German</option>
                                     </select>
                                 </div> */}
+                                <div className="footer-about-social-list">
+                        <Link to="#">
+                            <i className="ti-instagram" />
+                        </Link>
+                        <Link to="#">
+                            <i className="ti-twitter" />
+                        </Link>
+                        <Link to="#">
+                            <i className="ti-youtube" />
+                        </Link>
+                        <Link to="#">
+                            <i className="ti-facebook" />
+                        </Link>
+                        <Link to="#">
+                            <i className="ti-pinterest" />
+                        </Link>
+                        <Link to="#">
+                            <i className="ti-whatsapp" />
+                        </Link>
+                        <Link to='https://wa.me/9305804900'>
+                            <img src="img/whatsapp1.png" alt="" style={{ width:'14%' , marginRight: '100%'}} />
+                        </Link>
+                    </div>
                 </div>
                 </div>
                 <div className="col-md-3 offset-md-1">
-                <div className="footer-column footer-explore clearfix">
-                    <h3 className="footer-title">Explore</h3>
-                    <ul className="footer-explore-list list-unstyled">
-                    <li className='link' onClick={scrollToTop}>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li className='link' onClick={scrollToTop}>
-                        <Link to="/Room">Rooms &amp; Banquet</Link>
-                    </li>
-                    <li className='link' onClick={scrollToTop}>
-                        <Link to="/Restaurant">Dinning</Link>
-                    </li>
-                    {/* <li><Link to="/">Spa & Wellness</Link></li> */}
-                    <li className='link' onClick={scrollToTop}>
-                        <Link to="/Tariff">Tariff</Link>
-                    </li>
-                    <li className='link' onClick={scrollToTop}>
-                        <Link to="/Contact">Contact</Link>
-                    </li>
-                    </ul>
-                </div>
+                    <div className="footer-column footer-explore clearfix">
+                        <h3 className="footer-title">Explore</h3>
+                        <ul className="footer-explore-list list-unstyled">
+                        <li className='link' onClick={scrollToTop}>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li className='link' onClick={scrollToTop}>
+                            <Link to="/Room">Rooms &amp; Suites</Link>
+                        </li>
+                        <li className='link' onClick={scrollToTop}>
+                            <Link to="/Restaurant">Restaurant</Link>
+                        </li>
+                        {/* <li><Link to="/">Spa & Wellness</Link></li> */}
+                        <li className='link' onClick={scrollToTop}>
+                            <Link to="/About">About Hotel</Link>
+                        </li>
+                        <li className='link' onClick={scrollToTop}>
+                            <Link to="/Contact">Contact</Link>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="col-md-4">
-                <div className="footer-column footer-contact">
-                    <h3 className="footer-title">Contact</h3>
-                    <p className="footer-contact-text">
-                    16 GH, Babatpur LBS International Airport
-                    <br />
-                    Varanasi - 221 006 (U.P.), India
-                    </p>
-                    <div className="footer-contact-info">
-                    <p className="footer-contact-phone">
-                        <span className="flaticon-call" /> 93058 04900
-                    </p>
-                    <p className="footer-contact-mail">info@hotelrunwayinn.com</p>
+                    <div className="footer-column footer-contact">
+                        <h3 className="footer-title">Contact</h3>
+                        <p className="footer-contact-text">
+                        16 GH, Babatpur LBS International Airport
+                        <br />
+                        Varanasi - 221 006 (U.P.), India
+                        </p>
+                        <div className="footer-contact-info">
+                        <p className="footer-contact-phone">
+                            <span className="flaticon-call" /> 93058 04900
+                        </p>
+                        <p className="footer-contact-phone">
+                            <span className="flaticon-call" /> 0542-2622384,2623100
+                        </p>
+                        <p className="footer-contact-mail">info@hotelrunwayinn.com</p>
+                        <p className="footer-contact-mail">booking.runwayInn@gmail.com</p>
+                        </div>
                     </div>
-                    <div className="footer-about-social-list">
-                    <Link to="#">
-                        <i className="ti-instagram" />
-                    </Link>
-                    <Link to="#">
-                        <i className="ti-twitter" />
-                    </Link>
-                    <Link to="#">
-                        <i className="ti-youtube" />
-                    </Link>
-                    <Link to="#">
-                        <i className="ti-facebook" />
-                    </Link>
-                    <Link to="#">
-                        <i className="ti-pinterest" />
-                    </Link>
-                    </div>
-                </div>
                 </div>
             </div>
             </div>

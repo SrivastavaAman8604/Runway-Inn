@@ -9,6 +9,9 @@ import Room from './Component/Room';
 import Restaurant from './Component/Resturant';
 import Contact from './Component/Contact';
 import Tariff from './Component/Tariff';
+import Gallery from './Component/Gallery';
+import Map from './Component/Map';
+import Award from './Component/Award';
 
 function App() {
   return (
@@ -20,8 +23,11 @@ function App() {
         <Route path='/room' element={<Room/>}/>
         <Route path='/restaurant' element={<Restaurant/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/gallery' element={<Gallery/>}/>
+        <Route path='/awards-and-achievements' element={<Award/>}/>
       </Routes>
       {/* <Form/> */}
+      <Map/>
       <Footer/>
     </Router>
   );

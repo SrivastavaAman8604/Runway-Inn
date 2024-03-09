@@ -21,14 +21,13 @@ const Home = () => {
                             <i className="star-rating" />
                             <i className="star-rating" />
                             <i className="star-rating" />
-                            <i className="star-rating" />
                         </span>
                         <h4>Luxury Hotel &amp; Best Resort</h4>
                         <h1>Enjoy a Luxury Experience</h1>
                         <div className="butn-light mt-30 mb-30">
                             {" "}
                             <a href="/" data-scroll-nav={1}>
-                            <span>Rooms &amp; Suites</span>
+                                <span>Rooms &amp; Suites</span>
                             </a>{" "}
                         </div>
                         </div>
@@ -46,7 +45,6 @@ const Home = () => {
                     <div className="row">
                         <div className="col-md-10 offset-md-1">
                         <span>
-                            <i className="star-rating" />
                             <i className="star-rating" />
                             <i className="star-rating" />
                             <i className="star-rating" />
@@ -75,7 +73,6 @@ const Home = () => {
                     <div className="row">
                         <div className="col-md-10 offset-md-1">
                         <span>
-                            <i className="star-rating" />
                             <i className="star-rating" />
                             <i className="star-rating" />
                             <i className="star-rating" />
@@ -116,13 +113,13 @@ const Home = () => {
                 className="col-md-6 mb-30 animate-box"
                 data-animate-effect="fadeInUp"
                 >
-                {/* <span>
+                <span>
                         <i class="star-rating"></i>
                         <i class="star-rating"></i>
                         <i class="star-rating"></i>
                         <i class="star-rating"></i>
-                        <i class="star-rating"></i>
-                    </span> */}
+                        {/* <i class="star-rating"></i> */}
+                    </span>
                 <div className="section-subtitle">Airport Hotel in Varanasi </div>
                 <div className="section-title">Enjoy a Luxury Experience 
                 {/* <img src="img/images/Gallery Edited/3-removebg-preview.png" alt="" className="w-25"/> */}
@@ -159,7 +156,7 @@ const Home = () => {
                     </div>
                 </div>
                 </div>
-                {/* <div
+                <div
                 className="col col-md-6 animate-box"
                 data-animate-effect="fadeInUp"
                 >
@@ -168,8 +165,8 @@ const Home = () => {
                     alt=""
                     className="mt-90 mb-30"
                 />
-                </div> */}
-                <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+                </div>
+                {/* <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp">
                     <img
                     src="img/images/Gallery Edited/2-2.png"
                     alt=""
@@ -178,7 +175,7 @@ const Home = () => {
                 </div>
                 <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp">
                     <img src="img/images/Gallery Edited/1.png" alt="" />
-                </div>
+                </div> */}
                 {/* <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
                     <img src="img/rooms/8.jpg" alt="" class="mt-90 mb-30"/>
                 </div>
@@ -199,18 +196,18 @@ const Home = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-4">
+                {/* <div className="col-md-4">
                 <div className="item">
                     <div className="position-re o-hidden">
                     {" "}
                     <img src="img/images/Business class edited/4.webp" alt="" />{" "}
                     </div>{" "}
                     <span className="category">
-                    <a href="rooms2.html">Book</a>
+                    <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">150₹ / Night</a>
+                    <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
                     </h6>
                     <h5>
                         <a href="room-details.html">Junior Suite</a>{" "}
@@ -243,15 +240,15 @@ const Home = () => {
                     </div>
                     </div>
                 </div>
-                </div>
-                <div className="col-md-4">
+                </div> */}
+                <div className="col-md-6">
                 <div className="item">
                     <div className="position-re o-hidden">
                     {" "}
                     <img src="img/images/Premium Economy/8-1.webp" alt="" />
                     </div>{" "}
                     <span className="category">
-                    <a href="rooms2.html">Book</a>
+                    <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
                     </span>
                     <div className="con">
                     <h6>
@@ -289,7 +286,7 @@ const Home = () => {
                     </div>
                 </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-6">
                 <div className="item">
                     <div className="position-re o-hidden">
                     {" "}
@@ -299,7 +296,7 @@ const Home = () => {
                     />{" "}
                     </div>{" "}
                     <span className="category">
-                    <a href="rooms2.html">Book</a>
+                    <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
                     </span>
                     <div className="con">
                     <h6>
@@ -344,7 +341,7 @@ const Home = () => {
                     <img src="img/images/Family Suite Edited/1-1.jpg" alt="" />{" "}
                     </div>{" "}
                     <span className="category">
-                    <a href="rooms2.html">Book</a>
+                    <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
                     </span>
                     <div className="con">
                     <h6>
@@ -392,7 +389,7 @@ const Home = () => {
                     />{" "}
                     </div>{" "}
                     <span className="category">
-                    <a href="rooms2.html">Book</a>
+                    <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
                     </span>
                     <div className="con">
                     <h6>
@@ -519,7 +516,6 @@ const Home = () => {
                     <i className="star-rating" />
                     <i className="star-rating" />
                     <i className="star-rating" />
-                    <i className="star-rating" />
                 </span>
                 <div className="section-subtitle">
                     <span>The Runway Inn Luxury Hotel</span>
@@ -563,6 +559,23 @@ const Home = () => {
                 </div>
             </div>
             <div className="row">
+            <div className="col-md-4">
+                <div
+                    className="single-facility animate-box"
+                    data-animate-effect="fadeInUp"
+                >
+                    <span className="flaticon-swimming" />
+                    <h5>Swimming Pool</h5>
+                    <p>
+                    Enjoy a refreshing escape with our inviting swimming pool,
+                    offering a perfect blend of relaxation and leisure at our hotel.
+                    </p>
+                    <div className="facility-shape">
+                    {" "}
+                    <span className="flaticon-swimming" />{" "}
+                    </div>
+                </div>
+                </div>
                 <div className="col-md-4">
                 <div
                     className="single-facility animate-box"
@@ -608,23 +621,7 @@ const Home = () => {
                     </div>
                 </div>
                 </div>
-                <div className="col-md-4">
-                <div
-                    className="single-facility animate-box"
-                    data-animate-effect="fadeInUp"
-                >
-                    <span className="flaticon-swimming" />
-                    <h5>Swimming Pool</h5>
-                    <p>
-                    Enjoy a refreshing escape with our inviting swimming pool,
-                    offering a perfect blend of relaxation and leisure at our hotel.
-                    </p>
-                    <div className="facility-shape">
-                    {" "}
-                    <span className="flaticon-swimming" />{" "}
-                    </div>
-                </div>
-                </div>
+                
                 <div className="col-md-4">
                 <div
                     className="single-facility animate-box"
@@ -802,7 +799,7 @@ const Home = () => {
                 >
                 <div className="img left">
                     <a href="restaurant.html">
-                    <img src="img/images/restaurant/2982.jpg" alt="" />
+                    <img src="img/images/restaurant/4-1-Copy.png" alt="" />
                     </a>
                 </div>
                 </div>
@@ -816,11 +813,12 @@ const Home = () => {
                         <h6>Discover</h6>
                     </div>
                     <h4>The Restaurant</h4>
-                    <p>
+                    {/* <p>
                         A Multicuisine Casual Dining Restaurant.Fresh and exciting
                         multi-cuisine takes centre stage here with 55-60 Cover, Full Day
                         Dining with nice ambience just outside Varanasi Airport.
-                    </p>
+                    </p> */}
+                    <p>Nestled just outside Varanasi Airport, our multicuisine casual dining restaurant offers a delightful culinary experience with its fresh and exciting menu. With a seating capacity of 55-60 covers, our restaurant provides a welcoming ambience for guests to indulge in a full day dining experience. Whether you're craving Indian delicacies, international flavors, or fusion dishes, our menu caters to all tastes, promising a memorable dining experience. Join us to savor the finest in multi-cuisine dining, where every dish is a culinary masterpiece crafted with passion and care.</p>
                     <div className="butn-dark">
                         {" "}
                         <a href="restaurant.html">
@@ -937,7 +935,7 @@ const Home = () => {
                 >
                 <div className="img">
                     <a href="/">
-                    <img src="img/images/Pool Area Edited/IMG_2145-1.jpg" alt="" />
+                    <img src="img/images/Pool Area Edited/IMG_2143-1.jpg" alt="" />
                     </a>
                 </div>
                 </div>
