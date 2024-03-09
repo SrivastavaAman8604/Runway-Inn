@@ -12,6 +12,7 @@ import Tariff from './Component/Tariff';
 import Gallery from './Component/Gallery';
 import Map from './Component/Map';
 import Award from './Component/Award';
+import Banquet from './Component/Banquet';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/awards-and-achievements' element={<Award/>}/>
+        <Route path='/banquet' element={<Banquet/>}/>
       </Routes>
       {/* <Form/> */}
       <Map/>
