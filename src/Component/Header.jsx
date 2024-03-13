@@ -110,7 +110,7 @@ const Header = () => {
           </Link>
           <ul className="dropdown-menu">
             <li className="dropdown-item">
-              <Link to="">Aqua Lounge</Link>
+              <Link to="/aqua-lounge">Aqua Lounge</Link>
             </li>
           </ul>
         </li>

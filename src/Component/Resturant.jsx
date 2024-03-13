@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+ 
 const Restaurant = () => {
   return (
     <>
@@ -183,6 +184,11 @@ const Restaurant = () => {
                             </div>
                         </div>
                         </div>
+                    </div>
+                    <div className='text-center'>
+                    <button type="submit" className="btn btn-danger mt-5">
+                        <Link to='/img/SIMPLY_BENARAS_MENU.pdf' target="_blank" download>Download Menu</Link>                    
+                    </button>
                     </div>
                     {/* Mains */}
                     <div id="tab-2-content" className="cont">
