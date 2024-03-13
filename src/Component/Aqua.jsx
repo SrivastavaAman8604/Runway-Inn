@@ -28,11 +28,7 @@ const Aqua = () => {
             <div className="row">
                 <div className="col-md-6">
                 <p className="mb-30">
-                    For a sophisticated time, head here. It's perfect for meetings
-                    between business partners, colleagues and friends. Explore the roof
-                    top pool with lounge, at Level-3 along with wooden deck floor and
-                    lavish garden, with sitting for approx 40-45 pax, amidst a half
-                    covered and hald open ambience. Enjoy as you relax.
+                    For a truly refined experience, this venue offers a sophisticated ambiance ideal for meetings among business partners, colleagues, and friends alike. The rooftop pool area, located at Level-3, features a luxurious lounge area with a wooden deck floor and a lavish garden. With seating for approximately 40-45 guests, the space offers a unique blend of half-covered and half-open settings, providing a charming and relaxing environment. Whether you're looking to unwind or host a memorable gathering, this rooftop oasis promises a delightful experience for all.
                 </p>
                 <h6>Hours</h6>
                 <ul className="list-unstyled page-list mb-30">
