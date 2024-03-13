@@ -245,7 +245,7 @@ const Home = () => {
                 <div className="item">
                     <div className="position-re o-hidden">
                     {" "}
-                    <img src="img/images/Premium Economy/8-1.webp" alt="" />
+                    <img src="img/images/Premium Economy/8.webp" alt="" style={{aspectRatio:'3/2'}}/>
                     </div>{" "}
                     <span className="category">
                     <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
@@ -277,7 +277,7 @@ const Home = () => {
                         </div>
                         <div className="col col-md-5 text-end">
                         <div className="permalink">
-                            <a href="rooms.html">
+                            <a href="/Room">
                             Details <i className="ti-arrow-right" />
                             </a>
                         </div>
@@ -291,8 +291,9 @@ const Home = () => {
                     <div className="position-re o-hidden">
                     {" "}
                     <img
-                        src="img/images/Business class edited/5-1.webp"
+                        src="img/images/Business class edited/IMG_3104.2.JPG"
                         alt=""
+                        style={{aspectRatio:'3/2'}}
                     />{" "}
                     </div>{" "}
                     <span className="category">
@@ -325,7 +326,7 @@ const Home = () => {
                         </div>
                         <div className="col col-md-5 text-end">
                         <div className="permalink">
-                            <a href="rooms.html">
+                            <a href="/Room">
                             Details <i className="ti-arrow-right" />
                             </a>
                         </div>
@@ -370,7 +371,7 @@ const Home = () => {
                         </div>
                         <div className="col col-md-5 text-end">
                         <div className="permalink">
-                            <a href="rooms.html">
+                            <a href="/Room">
                             Details <i className="ti-arrow-right" />
                             </a>
                         </div>
@@ -418,7 +419,7 @@ const Home = () => {
                         </div>
                         <div className="col col-md-5 text-end">
                         <div className="permalink">
-                            <a href="rooms.html">
+                            <a href="/Room">
                             Details <i className="ti-arrow-right" />
                             </a>
                         </div>
