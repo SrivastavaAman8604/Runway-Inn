@@ -13,6 +13,7 @@ import Gallery from './Component/Gallery';
 import Map from './Component/Map';
 import Award from './Component/Award';
 import Banquet from './Component/Banquet';
+import Aqua from './Component/Aqua';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/awards-and-achievements' element={<Award/>}/>
         <Route path='/banquet' element={<Banquet/>}/>
+        <Route path='/aqua-lounge' element={<Aqua/>}/>
       </Routes>
       {/* <Form/> */}
       <Map/>
