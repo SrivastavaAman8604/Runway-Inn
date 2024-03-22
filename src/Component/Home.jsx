@@ -26,7 +26,7 @@ const Home = () => {
                         <h1>Enjoy a Luxury Experience</h1>
                         <div className="butn-light mt-30 mb-30">
                             {" "}
-                            <a href="/" data-scroll-nav={1}>
+                            <a href="/Room" data-scroll-nav={1}>
                                 <span>Rooms &amp; Suites</span>
                             </a>{" "}
                         </div>
@@ -161,7 +161,7 @@ const Home = () => {
                 data-animate-effect="fadeInUp"
                 >
                 <img
-                    src="img/images/Gallery Edited/1.jpg"
+                    src="img/images/Gallery Edited/1-1.jpg"
                     alt=""
                     className="mt-90 mb-30"
                 />
@@ -339,7 +339,7 @@ const Home = () => {
                 <div className="item">
                     <div className="position-re o-hidden">
                     {" "}
-                    <img src="img/images/Family Suite Edited/1-1.jpg" alt="" />{" "}
+                    <img src="img/images/Family Suite Edited/4-copy - Copy.png" alt="" />{" "}
                     </div>{" "}
                     <span className="category">
                     <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 

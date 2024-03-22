@@ -1,7 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React , {useEffect} from 'react'
+import { Link,useLocation } from 'react-router-dom'
 
 const Room = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [hash]);
+
   return (
     <>
   <div
@@ -19,7 +32,7 @@ const Room = () => {
             <i className="star-rating" />
           </span>
           <h5>The Runway Inn Hotel</h5>
-          <h1>Rooms &amp; Suits</h1>
+          <h1>Rooms &amp; Suites</h1>
         </div>
       </div>
     </div>
@@ -33,6 +46,7 @@ const Room = () => {
           <div
             className="rooms2 mb-90 animate-box"
             data-animate-effect="fadeInUp"
+            id='business-class'
           >
             <figure >
             <img src="img/images/Business class edited/IMG_3104.1 - Copy.JPG" alt="" className="img-fluid" style={{aspectRatio:'5/3'}}/>
@@ -42,7 +56,7 @@ const Room = () => {
                 5000₹ <span>/ Night</span>
               </h3>
               <h4>
-                <a href="room-details.html">Business Class</a>
+                <a href="/">Business Class</a>
               </h4>
               <p>
                 Stay productive and unwind in our Business Suite, featuring a dedicated workspace and luxurious amenities tailored for business travelers.
@@ -98,6 +112,7 @@ const Room = () => {
           <div
             className="rooms2 mb-90 left animate-box"
             data-animate-effect="fadeInUp"
+            id='family-suite'
           >
             <figure>
             <img src="img/images/Family Suite Edited/1-1.jpg" alt="" className="img-fluid"/>
@@ -116,7 +131,7 @@ const Room = () => {
                 <div className="col-md-4">
                   <ul>
                     <li>
-                      <i className="flaticon-group" /> 2-4 Persons
+                      <i className="flaticon-group" /> 3-4 Persons
                     </li>
                     <li>
                       <i className="flaticon-wifi" /> Free Wifi
@@ -163,6 +178,7 @@ const Room = () => {
           <div
             className="rooms2 mb-90 animate-box"
             data-animate-effect="fadeInUp"
+            id='premium-economy'
           >
             <figure>
             <img src="img/images/Premium Economy/8.webp" alt="" className="img-fluid"/>
@@ -225,7 +241,7 @@ const Room = () => {
               </div>
             </div>
           </div>
-          <div className="rooms2 left animate-box" data-animate-effect="fadeInUp">
+          <div className="rooms2 left animate-box" data-animate-effect="fadeInUp" id='maharaja-suite'>
             <figure>
               {/* <img src="img/slider/2.jpg" alt="" className="img-fluid" /> */}
               <img src="img/images/Maharaja Suite Edited/17-1-min.webp" alt="" className="img-fluid"/>
@@ -292,318 +308,7 @@ const Room = () => {
       </div>
     </div>
   </section>
-
-  <section className="services section-padding">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                  <div className="img left">
-                      <a href="/">
-                        <img src="img/images/banquet/IMG_2093.1.jpg" alt="" />
-                      </a>
-                  </div>
-                </div>
-                <div className="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                  <div className="content">
-                    <div className="cont text-left">
-                      <div className="info">
-                          <h6>Banquet</h6>
-                      </div>
-                    <h4>MEHFIL</h4>
-                    <p>
-                      Looking for the perfect venue for your next official meeting, social gathering, or engagement? Our banquet section, located at ground level, offers a spacious and versatile setting for events with 80-100 guests. The U-shape seating arrangement can comfortably accommodate 25-30 guests, providing a conducive environment for productive meetings or lively social gatherings. With our attention to detail and commitment to excellence, we ensure that every event is a memorable success.
-                    </p>
-                    {/* <div className="butn-dark">
-                        {" "}
-                        <a href="/">
-                        <span>Learn More</span>
-                        </a>{" "}
-                    </div> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-                <div
-                className="col-md-6 bg-cream p-0 order2 valign animate-box"
-                data-animate-effect="fadeInLeft"
-                >
-                <div className="content">
-                    <div className="cont text-left">
-                    <div className="info">
-                        <h6>Banquet</h6>
-                    </div>
-                    <h4> JALSA</h4>
-                    <p>
-                      Elevate your event experience at our banquet section, situated on Level-3, offering a delightful ambiance and picturesque views. With flexible seating arrangements including theatre style, U-shape, cluster, and classroom, our venue can accommodate approximately 125-150 guests. Whether you're hosting a conference, seminar, or workshop, our versatile space and impeccable service ensure a successful and memorable event.
-                    </p>
-                    {/* <div className="butn-dark">
-                        {" "}
-                        <a href="/">
-                        <span>Learn More</span>
-                        </a>{" "}
-                    </div> */}
-                    </div>
-                </div>
-                </div>
-                <div
-                className="col-md-6 p-0 order1 animate-box"
-                data-animate-effect="fadeInRight"
-                >
-                <div className="img">
-                    <a href="/">
-                    <img src="img/images/banquet/1.1.png" alt="" />
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
-        </section>
-  {/* <section className="rooms1 section-padding bg-cream" data-scroll-index={1}>
-    <div className="container">
-      <div className="row">
-        <div className="col-md-12">
-          <div className="section-subtitle">The Runway Inn Luxury Hotel</div>
-          <div className="section-title">Rooms &amp; Suites</div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-4">
-          <div className="item">
-            <div className="position-re o-hidden">
-              {" "}
-              <img src="img/images/Business class edited/4.webp" alt="" />{" "}
-            </div>{" "}
-            <span className="category">
-              <a href="rooms2.html">Book</a>
-            </span>
-            <div className="con">
-              <h6>
-                <a href="room-details.html">150₹ / Night</a>
-              </h6>
-              <h5>
-                <a href="room-details.html">Junior Suite</a>{" "}
-              </h5>
-              <div className="line" />
-              <div className="row facilities">
-                <div className="col col-md-7">
-                  <ul>
-                    <li>
-                      <i className="flaticon-bed" />
-                    </li>
-                    <li>
-                      <i className="flaticon-bath" />
-                    </li>
-                    <li>
-                      <i className="flaticon-breakfast" />
-                    </li>
-                    <li>
-                      <i className="flaticon-towel" />
-                    </li>
-                  </ul>
-                </div>
-                <div className="col col-md-5 text-end">
-                  <div className="permalink">
-                    <a href="rooms.html">
-                      Details <i className="ti-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="item">
-            <div className="position-re o-hidden">
-              {" "}
-              <img src="img/images/Premium Economy/8-1.webp" alt="" />
-            </div>{" "}
-            <span className="category">
-              <a href="rooms2.html">Book</a>
-            </span>
-            <div className="con">
-              <h6>
-                <a href="room-details.html">200₹ / Night</a>
-              </h6>
-              <h5>
-                <a href="room-details.html">Premium Suite</a>
-              </h5>
-              <div className="line" />
-              <div className="row facilities">
-                <div className="col col-md-7">
-                  <ul>
-                    <li>
-                      <i className="flaticon-bed" />
-                    </li>
-                    <li>
-                      <i className="flaticon-bath" />
-                    </li>
-                    <li>
-                      <i className="flaticon-breakfast" />
-                    </li>
-                    <li>
-                      <i className="flaticon-towel" />
-                    </li>
-                  </ul>
-                </div>
-                <div className="col col-md-5 text-end">
-                  <div className="permalink">
-                    <a href="rooms.html">
-                      Details <i className="ti-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="item">
-            <div className="position-re o-hidden">
-              {" "}
-              <img
-                src="img/images/Business class edited/5-1.webp"
-                alt=""
-              />{" "}
-            </div>{" "}
-            <span className="category">
-              <a href="rooms2.html">Book</a>
-            </span>
-            <div className="con">
-              <h6>
-                <a href="room-details.html">250₹ / Night</a>
-              </h6>
-              <h5>
-                <a href="room-details.html">Business Suite</a>
-              </h5>
-              <div className="line" />
-              <div className="row facilities">
-                <div className="col col-md-7">
-                  <ul>
-                    <li>
-                      <i className="flaticon-bed" />
-                    </li>
-                    <li>
-                      <i className="flaticon-bath" />
-                    </li>
-                    <li>
-                      <i className="flaticon-breakfast" />
-                    </li>
-                    <li>
-                      <i className="flaticon-towel" />
-                    </li>
-                  </ul>
-                </div>
-                <div className="col col-md-5 text-end">
-                  <div className="permalink">
-                    <a href="rooms.html">
-                      Details <i className="ti-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="item">
-            <div className="position-re o-hidden">
-              {" "}
-              <img src="img/images/Family Suite Edited/1-1.jpg" alt="" />{" "}
-            </div>{" "}
-            <span className="category">
-              <a href="rooms2.html">Book</a>
-            </span>
-            <div className="con">
-              <h6>
-                <a href="room-details.html">300₹ / Night</a>
-              </h6>
-              <h5>
-                <a href="room-details.html">Family Suite</a>
-              </h5>
-              <div className="line" />
-              <div className="row facilities">
-                <div className="col col-md-7">
-                  <ul>
-                    <li>
-                      <i className="flaticon-bed" />
-                    </li>
-                    <li>
-                      <i className="flaticon-bath" />
-                    </li>
-                    <li>
-                      <i className="flaticon-breakfast" />
-                    </li>
-                    <li>
-                      <i className="flaticon-towel" />
-                    </li>
-                  </ul>
-                </div>
-                <div className="col col-md-5 text-end">
-                  <div className="permalink">
-                    <a href="rooms.html">
-                      Details <i className="ti-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="item">
-            <div className="position-re o-hidden">
-              {" "}
-              <img
-                src="img/images/Maharaja Suite Edited/17-1-min.webp"
-                alt=""
-              />{" "}
-            </div>{" "}
-            <span className="category">
-              <a href="rooms2.html">Book</a>
-            </span>
-            <div className="con">
-              <h6>
-                <a href="room-details.html">150₹ / Night</a>
-              </h6>
-              <h5>
-                <a href="room-details.html">Maharaja Suite</a>
-              </h5>
-              <div className="line" />
-              <div className="row facilities">
-                <div className="col col-md-7">
-                  <ul>
-                    <li>
-                      <i className="flaticon-bed" />
-                    </li>
-                    <li>
-                      <i className="flaticon-bath" />
-                    </li>
-                    <li>
-                      <i className="flaticon-breakfast" />
-                    </li>
-                    <li>
-                      <i className="flaticon-towel" />
-                    </li>
-                  </ul>
-                </div>
-                <div className="col col-md-5 text-end">
-                  <div className="permalink">
-                    <a href="rooms.html">
-                      Details <i className="ti-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> */}
 </>
-
   )
 }
 

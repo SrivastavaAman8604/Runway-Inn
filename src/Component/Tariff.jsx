@@ -29,13 +29,13 @@ const Tariff = () => {
             <div className="pricing-card">
                 <img src="img/images/Family Suite Edited/1-1.webp" alt="" style={{ aspectRatio: '3/2' }}/>
                 <div className="desc">
-                <div className="name">ECONOMY</div>
+                <div className="name">PREMIUM ECONOMY</div>
                 <div className='d-flex'>
                     <div className="name text-center pt-2">
                         Single -
                     </div>
                     <div className="amount px-2">
-                        Rs. 4000/-<span>/ day</span>
+                        Rs. 5000/-<span>/ day</span>
                     </div>
                 </div>
                 <div className='d-flex'>
@@ -43,7 +43,7 @@ const Tariff = () => {
                         Double -
                     </div>
                     <div className="amount px-2">
-                        Rs. 5000/-<span>/ day</span>
+                        Rs. 6000/-<span>/ day</span>
                     </div>
                 </div>
                 
@@ -66,23 +66,23 @@ const Tariff = () => {
             <div className="pricing-card">
                 <img src="img/images/Premium Economy/8-1.webp" alt="" style={{ aspectRatio: '3/2' }}/>
                 <div className="desc">
-                <div className="name">PREMIUM ECONOMY</div>
+                <div className="name">Family Suite</div>
                 <div className='d-flex'>
-                    <div className="name text-center pt-2">
+                    {/* <div className="name text-center pt-2">
                         Single -
-                    </div>
+                    </div> */}
                     <div className="amount px-2">
-                        Rs. 5000/-<span>/ day</span>
+                        Rs. 10999/-<span>/ day</span>
                     </div>
                 </div>
-                <div className='d-flex'>
+                {/* <div className='d-flex'>
                     <div className="name text-center pt-2">
                         Double -
                     </div>
                     <div className="amount px-2">
                         Rs. 6000/-<span>/ day</span>
                     </div>
-                </div>
+                </div> */}
                 {/* <ul className="list-unstyled list">
                     <li>
                     <i className="ti-check" /> Above rates are inclusive of buffet breakfast and
@@ -206,7 +206,7 @@ const Tariff = () => {
                 <div className="desc">
                 <div className="name">MAHARAJA SUITE</div>
                 <div className="amount">
-                Rs. 9000/-<span>/ day</span>
+                Rs. 16999/-<span>/ day</span>
                 </div>
                 
                 </div>

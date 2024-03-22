@@ -27,10 +27,10 @@ const Gallery = () => {
   <section className="section-padding">
     <div className="container">
       <div className="row">
-        <div className="col-md-12">
+        {/* <div className="col-md-12">
           <div className="section-subtitle">Images</div>
           <div className="section-title">Image Gallery</div>
-        </div>
+        </div> */}
         {/* 3 columns */}
         <div className="col-md-4 gallery-item">
           <a href="img/images/Business class edited/IMG_3104.1 - Copy.JPG" title="" className="img-zoom">

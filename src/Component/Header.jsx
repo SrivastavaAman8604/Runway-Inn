@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
+ 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -18,7 +26,7 @@ const Header = () => {
     <div className="logo-wrapper">
       <Link className="logo" to="/">
         {" "}
-        <img src="img/runnway.png" className="logo-img link" alt="" />{" "}
+        <img src="img/runnway.png" className="logo-img link log" alt="" />{" "}
       </Link>
       {/* <a className="logo" href="index.html"> <h2>THE Runway Inn <span>Luxury Hotel</span></h2> </a> */}
     </div>
@@ -33,8 +41,8 @@ const Header = () => {
       aria-label="Toggle navigation"
     >
       {" "}
-      <span className="navbar-toggler-icon">
-        <i className="ti-menu" />
+      <span className="navbar-toggler-icon" style={{marginBottom: '50px' }}>
+        <i className="ti-menu" style={{fontSize: '30px' }}/>
       </span>{" "}
     </button>
     {/* Menu */}
@@ -83,10 +91,10 @@ const Header = () => {
             <i className="ti-angle-down"></i>
           </Link>
           <ul className="dropdown-menu">
-            <li><Link to="/Room" className="dropdown-item"><span>Business Class</span></Link></li>
-            <li><Link to="/Room" className="dropdown-item"><span>Family Suite</span></Link></li>
-            <li><Link to="/Room" className="dropdown-item"><span>Premium Economy</span></Link></li>
-            <li><Link to="/Room" className="dropdown-item"><span>Maharaja Suite</span></Link></li>
+            <li><a href="/Room#business-class" className="dropdown-item"><span>Business Class</span></a></li>
+            <li><a href="/Room#family-suite" className="dropdown-item"><span>Family Suite</span></a></li>
+            <li><a href="/Room#premium-economy" className="dropdown-item"><span>Premium Economy</span></a></li>
+            <li><a href="/Room#maharaja-suite" className="dropdown-item"><span>Maharaja Suite</span></a></li>
           </ul>
         </li>
         <li className="nav-item" onClick={scrollToTop}>
@@ -106,11 +114,14 @@ const Header = () => {
         </li>
         <li className="nav-item dropdown" onClick={scrollToTop}>
           <Link className="nav-link link" to="/Restaurant">
-            Dinning<i className="ti-angle-down"></i>
+            Dining<i className="ti-angle-down"></i>
           </Link>
           <ul className="dropdown-menu">
             <li className="dropdown-item">
               <Link to="/aqua-lounge">Aqua Lounge</Link>
+            </li>
+            <li className="dropdown-item">
+              <Link to="/simply-benaras">Simply Benares</Link>
             </li>
           </ul>
         </li>

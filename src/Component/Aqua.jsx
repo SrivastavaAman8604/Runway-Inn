@@ -1,4 +1,6 @@
 import React from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const Aqua = () => {
   return (
@@ -28,7 +30,7 @@ const Aqua = () => {
             <div className="row">
                 <div className="col-md-6">
                 <p className="mb-30">
-                    For a truly refined experience, this venue offers a sophisticated ambiance ideal for meetings among business partners, colleagues, and friends alike. The rooftop pool area, located at Level-3, features a luxurious lounge area with a wooden deck floor and a lavish garden. With seating for approximately 40-45 guests, the space offers a unique blend of half-covered and half-open settings, providing a charming and relaxing environment. Whether you're looking to unwind or host a memorable gathering, this rooftop oasis promises a delightful experience for all.
+                For a truly refined experience, this venue offers a sophisticated ambiance ideal for meetings among business partners, colleagues, and friends alike. The rooftop pool area, located at Level-3, features a luxurious lounge area with a wooden deck floor and a lavish garden. With seating for approximately 40-45 guests, the space offers a unique blend of half-covered and half-open settings, providing a charming and relaxing environment. Whether you're looking to unwind or host a memorable gathering, this rooftop oasis promises a delightful experience for all.
                 </p>
                 <h6>Hours</h6>
                 <ul className="list-unstyled page-list mb-30">
@@ -79,7 +81,22 @@ const Aqua = () => {
                     <div className="section-title ">Aqua Lounge</div>
                     <img src="img/images/restaurant/aqua.png" alt="" className="ms-5 w-25 h-25" />
                 </div>
-                <img src="img/rooms/resturant.png" alt="" className="mt-30 mb-30" />
+                {/* <img src="img/rooms/resturant.png" alt="" className="mt-30 mb-30" /> */}
+                <Carousel showIndicators={false} showThumbs={false}>
+                  <div>
+                    <img src="img/images/restaurant/1-Copy.png" alt=""  />
+                  </div>
+                  <div>
+                    <img src="img/images/restaurant/resturant-Copy.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/images/restaurant/3-1-Copy.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/images/restaurant/2-Copy.png" alt="" />
+                  </div>
+                 
+            </Carousel>
                 </div>
             </div>
             </div>
