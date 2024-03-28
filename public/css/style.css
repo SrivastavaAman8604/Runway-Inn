@@ -825,7 +825,7 @@ color: #aa8453;
     left: 0;
     top: 0;
     width: 100%;
-/*     background: transparent; */
+    /* background: transparent; */
     background: #00000087;
     z-index: 99;
     padding-right: 0;
@@ -1076,8 +1076,10 @@ color: #aa8453;
         background-color: transparent;
     }
     .nav-scroll .logo-img {
-        width: 45px;
+        width: 85px;
+        margin-top: 0px;
     }
+    
     .navbar .logo {
         text-align: left;
         margin-left: 0px;
@@ -1091,7 +1093,7 @@ color: #aa8453;
     .navbar button {
         margin-right: 0px;
         outline: none !important;
-/*         background: transparent; */
+        /* background: transparent; */
         margin-top: 10px;
         border: none;
     }
@@ -2256,6 +2258,7 @@ hr {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    height: 84%;
 }
 .rooms1 .item:hover img {
     -webkit-filter: none;
@@ -3141,6 +3144,12 @@ hr {
   }  
 }
 @media screen and (max-width: 480px) {
+    .rooms1 .item {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+        height: auto;
+    }
     .services .content .date {
     width: 60px;
   }
@@ -3150,6 +3159,7 @@ hr {
     .services .content .date h3 {
     font-size: 40px;
   }
+  
 }
 
 
@@ -3929,7 +3939,7 @@ button.mfp-arrow {
     position: relative;
     background: #f8f5f0;
     padding: 45px;
-    margin-bottom: -75px;
+    /* margin-bottom: -75px; */
 }
 .booking-box .head-box h6 {
     font-size: 15px;
@@ -5491,7 +5501,4 @@ select {
     .video-fullscreen-wrap .caption {
         text-align: center;
     }
-	.pricing-card .amount {
-    font-size: 35px;
-	}
 }
