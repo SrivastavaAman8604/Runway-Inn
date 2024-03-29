@@ -1171,11 +1171,13 @@ color: #aa8453;
     }
 
     .navbar .navbar-collapse {
-        max-height: 450px;
+        /* max-height: 450px; */
+        max-height: fit-content;;
         overflow: auto;
         background: #fff;
         text-align: left;
         padding: 20px;
+        margin-top: -24%;
     }
 }
 
@@ -3144,6 +3146,9 @@ hr {
   }  
 }
 @media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 39px;
+    }
     .rooms1 .item {
         position: relative;
         overflow: hidden;
