@@ -80,7 +80,7 @@ const Header = () => {
                   </ul>     
         </li> */}
         <li className="nav-item" onClick={scrollToTop}>
-          <Link className="nav-link link" to="/Tariff">
+          <Link className="nav-link link nav-link1" to="/Tariff">
             Tariff
           </Link>
         </li>
@@ -98,22 +98,22 @@ const Header = () => {
           </ul>
         </li>
         <li className="nav-item" onClick={scrollToTop}>
-          <Link className="nav-link link" to="/Banquet">
+          <Link className="nav-link link nav-link1" to="/Banquet">
           Banquets
           </Link>
         </li>
         <li className="nav-item" onClick={scrollToTop}>
-          <Link className="nav-link link" to="/Gallery">
+          <Link className="nav-link nav-link1 link" to="/Gallery">
             Gallery
           </Link>
         </li>
         <li className="nav-item" onClick={scrollToTop}>
-          <Link className="nav-link link" to="/awards-and-achievements">
+          <Link className="nav-link link nav-link1" to="/awards-and-achievements">
             Awards & recognition
           </Link>
         </li>
         <li className="nav-item dropdown" onClick={scrollToTop}>
-          <Link className="nav-link link" to="/Restaurant">
+          <Link className="nav-link link dropdown-toggle" to="/Restaurant">
             Dining<i className="ti-angle-down"></i>
           </Link>
           <ul className="dropdown-menu">
@@ -154,7 +154,7 @@ const Header = () => {
                       <li><a href="/" className="dropdown-item"><span>Post Page</span></a></li>
                   </ul> */}
         <li className="nav-item" onClick={scrollToTop}>
-          <Link className="nav-link link" to="/Contact">
+          <Link className="nav-link link nav-link1" to="/Contact">
             Contact
           </Link>
         </li>
