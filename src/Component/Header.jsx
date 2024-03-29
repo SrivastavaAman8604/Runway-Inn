@@ -91,10 +91,10 @@ const Header = () => {
             <i className="ti-angle-down"></i>
           </Link>
           <ul className="dropdown-menu">
-            <li><a href="/Room#business-class" className="dropdown-item"><span>Business Class</span></a></li>
-            <li><a href="/Room#family-suite" className="dropdown-item"><span>Family Suite</span></a></li>
-            <li><a href="/Room#premium-economy" className="dropdown-item"><span>Premium Economy</span></a></li>
-            <li><a href="/Room#maharaja-suite" className="dropdown-item"><span>Maharaja Suite</span></a></li>
+            <li><a href="/Room#business-class" className="dropdown-item nav-link1"><span>Business Class</span></a></li>
+            <li><a href="/Room#family-suite" className="dropdown-item nav-link1"><span>Family Suite</span></a></li>
+            <li><a href="/Room#premium-economy" className="dropdown-item nav-link1"><span>Premium Economy</span></a></li>
+            <li><a href="/Room#maharaja-suite" className="dropdown-item nav-link1"><span>Maharaja Suite</span></a></li>
           </ul>
         </li>
         <li className="nav-item" onClick={scrollToTop}>
@@ -117,10 +117,10 @@ const Header = () => {
             Dining<i className="ti-angle-down"></i>
           </Link>
           <ul className="dropdown-menu">
-            <li className="dropdown-item">
+            <li className="dropdown-item nav-link1">
               <Link to="/aqua-lounge">Aqua Lounge</Link>
             </li>
-            <li className="dropdown-item">
+            <li className="dropdown-item nav-link1">
               <Link to="/simply-benaras">Simply Benares</Link>
             </li>
           </ul>
