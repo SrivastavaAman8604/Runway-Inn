@@ -8,3 +8,27 @@ $(document).on('click', '.link', function(){
 //     restaurant_menu();
     
 // });
+
+$(document).on('click', '.nav-item .nav-link1', function(){
+    
+    $(".navbar-toggler").addClass("collapsed");  
+    $(".navbar-collapse").removeClass("show");  
+    
+  });
+
+
+// $(document).on('click', '.nav-item .dropdown-toggle', function(){
+    
+//     $(".dropdown-menu").toggleClass('show');  
+   
+    
+//   });
+  
+
+  $(document).ready(function() {
+    $('.nav-item.dropdown .dropdown-toggle').click(function() {
+      $(this).next('.dropdown-menu').toggleClass('show');
+    });
+  });
+  
+  
