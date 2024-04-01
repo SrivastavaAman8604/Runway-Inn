@@ -99,7 +99,7 @@ const Contact = () => {
             </div>
             <div className="col-md-5 mb-30 offset-md-1">
             <h3>Get in touch</h3>
-            <form method="post" className="contact__form" action="send-email.php" onSubmit={handleSubmit}>
+            <form method="post" className="contact__form" action="./send-email.php" onSubmit={handleSubmit}>
                 {/* form message */}
                 <div className="row">
                 <div className="col-12">
