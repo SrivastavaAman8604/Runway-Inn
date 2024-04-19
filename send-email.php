@@ -1,44 +1,37 @@
 <?php
-header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $data = json_decode(file_get_contents('php://input'), true);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Process form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
 
-    $name = $data['name'];
-    $email = $data['email'];
-    $message = $data['message'];
+    // Email content
+    $email_content = "
+    <p>Name: $name</p>
+    <p>Email: $email</p>
+    <p>Phone: $phone</p>
+    <p>Message: $message</p>
+    ";
 
-    // Load PHPMailer
-    require 'vendor/autoload.php';
-
-    // Create a new PHPMailer instance
-    $mail = new PHPMailer\PHPMailer\PHPMailer();
-
-    // Set up SMTP
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';  // SMTP server
-    $mail->SMTPAuth = true;
-    $mail->Username = 'your-email@gmail.com';  // SMTP username (your Gmail email)
-    $mail->Password = 'your-password';  // SMTP password (your Gmail password)
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
-
-    // Set email format to HTML
-    $mail->isHTML(true);
-
-    // Set email parameters
-    $mail->setFrom('your-email@gmail.com', 'Your Name');  // Sender email and name
-    $mail->addAddress('aman.srivastava2639@gmail.com', 'Hotel Runway Inn');  // Recipient email and name
-    $mail->Subject = 'New Contact Form Submission';
-    $mail->Body = "Name: $name<br>Email: $email<br>Message: $message";
+    // Email headers
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= "From: $email\r\n";
 
     // Send email
-    if ($mail->send()) {
-        echo json_encode(['success' => true]);
+    $to = "aman.srivastava2639@gmail.com"; // Change to your email address
+    $subject = "Contact Form Submission";
+    $mail_result = mail($to, $subject, $email_content, $headers);
+
+    if ($mail_result) {
+        echo json_encode(["success" => true, "message" => "Email sent successfully"]);
     } else {
-        echo json_encode(['error' => 'Failed to send email']);
+        echo json_encode(["success" => false, "message" => "Failed to send email"]);
     }
 } else {
-    echo json_encode(['error' => 'Invalid request method']);
+    echo json_encode(["success" => false, "message" => "Invalid request method"]);
 }
 ?>
