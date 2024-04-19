@@ -1,10 +1,9 @@
 import React from 'react'
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
-const Baneras = () => {
+const SatvikBhoj = () => {
   return (
     <div>
-        <div
+      <div
     className="banner-header section-padding valign bg-img bg-fixed"
     data-overlay-dark={6}
     // data-background="img/images/banner/1.webp"
@@ -20,7 +19,7 @@ const Baneras = () => {
             <i className="star-rating" />
           </span>
           <h5>The Runway Inn Hotel</h5>
-          <h1>Simply Benares</h1>
+          <h1>Satvik Bhoj</h1>
         </div>
       </div>
     </div>
@@ -29,6 +28,22 @@ const Baneras = () => {
             <div className="container">
             <div className="row">
                 <div className="col-md-6 text-left">
+                {/* <span>
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                </span>
+                <div className="section-subtitle">
+                    Indulge in the Pure Essence of Satvik Bhoj
+                </div>
+                <div className='d-flex'>
+                    <div className="section-title">Spiritual Vegetarian</div>
+                </div> */}
+                
+                <img src="img/images/restaurant/satvik.jpg" alt="" className="mt-30 mb-30" />
+                </div>
+                <div className="col-md-6">
                 <span>
                     <i className="star-rating" />
                     <i className="star-rating" />
@@ -36,20 +51,19 @@ const Baneras = () => {
                     <i className="star-rating" />
                 </span>
                 <div className="section-subtitle">
-                    Unforgettable Cuisine while Dining
+                    Indulge in the Pure Essence of Satvik Bhoj
                 </div>
                 <div className='d-flex'>
-                    <div className="section-title">Simply Benares</div>
-                    <img src="img/images/restaurant/banaras.png" alt="" className="ms-5 w-25 h-25" />
+                    <div className="section-title">Spiritual Vegetarian</div>
                 </div>
-                
-                <img src="img/rooms/resturant1.png" alt="" className="mt-30 mb-30" />
-                </div>
-                <div className="col-md-6">
                 <p className="mb-30">
-                    A Multicuisine Casual Dining Restaurant. Fresh and exciting
-                    multi-cuisine takes centre stage here with 55-60 Cover, Full Day
-                    Dining with nice ambience just outside Varanasi Airport.
+                Step into a realm of culinary bliss with our "Spiritual Vegetarian" dining experience, meticulously curated for those seeking a deeper connection with their food. Our menu transcends the ordinary by excluding onion and garlic, ensuring that each dish is not just a meal but a spiritual journey.
+                </p>
+                <p className="mb-30">
+                Delight in the simplicity and authenticity of our homemade flavors, crafted with care to nourish both body and soul. Our Satvik Bhoj embodies the essence of purity, offering a symphony of flavors that dance on your palate. Every bite is a revelation, a testament to the artistry and dedication we put into every dish.
+                </p>
+                <p className="mb-30">
+                Join us on this gastronomic adventure, where food is not just sustenance but a gateway to a higher culinary experience.
                 </p>
                 <h6>Hours</h6>
                 <ul className="list-unstyled page-list mb-30">
@@ -89,4 +103,4 @@ const Baneras = () => {
   )
 }
 
-export default Baneras
+export default SatvikBhoj

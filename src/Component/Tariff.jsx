@@ -1,8 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const Tariff = () => {
   return (
     <>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>The Runway Inn - Unwind in Comfort at Varanasi's Best Budget-Friendly Hotel</title>
+            <meta name="description" content="Escape to The Runway Inn, where affordability meets comfort in the heart of Varanasi. Discover our pocket-friendly tariffs and experience the perfect blend of convenience and relaxation for your memorable stay." />
+            <link rel="canonical" href="https://www.hotelrunwayinn.com" />
+        </Helmet>
     <div className="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark={6}
     data-background="img/images/banner/1.webp">
     <div className="container">
@@ -27,7 +34,8 @@ const Tariff = () => {
         <div className="row">
             <div className="col-md-6">
             <div className="pricing-card">
-                <img src="img/images/Family Suite Edited/1-1.webp" alt="" style={{ aspectRatio: '3/2' }}/>
+
+                <img src="img/images/Premium Economy/8-1.webp" alt="" style={{ aspectRatio: '3/2' }}/>
                 <div className="desc">
                 <div className="name">PREMIUM ECONOMY</div>
                 <div className='d-flex'>
@@ -64,25 +72,25 @@ const Tariff = () => {
             </div>
             <div className="col-md-6">
             <div className="pricing-card">
-                <img src="img/images/Premium Economy/8-1.webp" alt="" style={{ aspectRatio: '3/2' }}/>
+                <img src="img/images/Business class edited/IMG_3104.1.JPG" alt="" style={{ aspectRatio: '3/2' }}/>
                 <div className="desc">
-                <div className="name">Family Suite</div>
+                <div className="name">BUSINESS CLASS</div>
                 <div className='d-flex'>
-                    {/* <div className="name text-center pt-2">
-                        Single -
-                    </div> */}
-                    <div className="amount px-2">
-                        Rs. 10999/-<span>/ day</span>
-                    </div>
-                </div>
-                {/* <div className='d-flex'>
                     <div className="name text-center pt-2">
-                        Double -
+                        Single -
                     </div>
                     <div className="amount px-2">
                         Rs. 6000/-<span>/ day</span>
                     </div>
-                </div> */}
+                </div>
+                <div className='d-flex'>
+                    <div className="name text-center pt-2">
+                        Double -
+                    </div>
+                    <div className="amount px-2">
+                        Rs. 7000/-<span>/ day</span>
+                    </div>
+                </div>
                 {/* <ul className="list-unstyled list">
                     <li>
                     <i className="ti-check" /> Above rates are inclusive of buffet breakfast and
@@ -163,28 +171,27 @@ const Tariff = () => {
     <section className="pricing section-padding">
         <div className="container">
         <div className="row">
-            
-            <div className="col-md-6">
+        <div className="col-md-6">
             <div className="pricing-card">
-                <img src="img/images/Business class edited/IMG_3104.1.JPG" alt="" style={{ aspectRatio: '3/2' }}/>
+            <img src="img/images/Family Suite Edited/1-1.webp" alt="" style={{ aspectRatio: '3/2' }}/>
                 <div className="desc">
-                <div className="name">BUSINESS CLASS</div>
+                <div className="name">Family Suite</div>
                 <div className='d-flex'>
-                    <div className="name text-center pt-2">
+                    {/* <div className="name text-center pt-2">
                         Single -
-                    </div>
+                    </div> */}
                     <div className="amount px-2">
-                        Rs. 6000/-<span>/ day</span>
+                        Rs. 10999/-<span>/ day</span>
                     </div>
                 </div>
-                <div className='d-flex'>
+                {/* <div className='d-flex'>
                     <div className="name text-center pt-2">
                         Double -
                     </div>
                     <div className="amount px-2">
-                        Rs. 7000/-<span>/ day</span>
+                        Rs. 6000/-<span>/ day</span>
                     </div>
-                </div>
+                </div> */}
                 {/* <ul className="list-unstyled list">
                     <li>
                     <i className="ti-check" /> Above rates are inclusive of buffet breakfast and
@@ -200,6 +207,7 @@ const Tariff = () => {
                 </div>
             </div>
             </div>
+            
             <div className="col-md-6">
             <div className="pricing-card">
                 <img src="img/images/Maharaja Suite Edited/17-1-min.webp" alt="" style={{ aspectRatio: '3/2' }}/>

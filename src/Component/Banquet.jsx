@@ -1,8 +1,15 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
 
 const Banquet = () => {
   return (
     <div>
+      <Helmet>
+            <meta charSet="utf-8" />
+            <title>Elegant Event Spaces at Hotel Runway Inn - Host Unforgettable Occasions</title>
+            <meta name="description" content="Make your special occasions truly memorable at Hotel Runway Inn. Explore our versatile banquet facilities, perfect for weddings, conferences, and more, amidst the charming ambiance of Varanasi." />
+            <link rel="canonical" href="https://www.hotelrunwayinn.com" />
+        </Helmet>
 
 <div
     className="banner-header section-padding valign bg-img bg-fixed"
@@ -66,7 +73,7 @@ const Banquet = () => {
                     </div>
                     <h4> JALSA</h4>
                     <p>
-                      Elevate your event experience at our banquet section, situated on Level-3, offering a delightful ambiance and picturesque views. With flexible seating arrangements including theatre style, U-shape, cluster, and classroom, our venue can accommodate approximately 125-150 guests. Whether you're hosting a conference, seminar, or workshop, our versatile space and impeccable service ensure a successful and memorable event.
+                      Elevate your event experience at our banquet section, situated on Level-3, offering a delightful ambiance and picturesque views. With flexible seating arrangements including theatre style, U-shape, cluster, and classroom, our venue can accommodate approximately 150-250 guests. Whether you're hosting a conference, seminar, or workshop, our versatile space and impeccable service ensure a successful and memorable event.
                     </p>
                     {/* <div className="butn-dark">
                         {" "}

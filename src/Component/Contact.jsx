@@ -1,40 +1,48 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react';
 
 const Contact = () => {
-
-
-    const [emailData, setEmailData] = useState({
-      to: '',
-      subject: '',
-      text: '',
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
     });
-    
+
     const handleChange = (e) => {
-        setEmailData({ ...emailData, [e.target.name]: e.target.value });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-      
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-      
-        try {
-            const response = await fetch('http://localhost:3000/send-email', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(emailData),
-            });
-      
-            if (response.ok) {
-              console.log('Email sent successfully');
-            } else {
-              console.error('Failed to send email');
-            }
-          } catch (error) {
-            console.error('Error sending email:', error);
-        }
 
-    }     
+        try {
+            const response = await fetch('http://localhost:3000/send-mail.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                if (result.success) {
+                    console.log('Email sent successfully');
+                    // Add any success message or redirection logic here
+                } else {
+                    console.error('Failed to send email');
+                    // Handle failure scenario
+                }
+            } else {
+                console.error('Failed to send email');
+                // Handle failure scenario
+            }
+        } catch (error) {
+            console.error('Error sending email:', error);
+            // Handle error scenario
+        }
+    };
+
   return (
     <>
   <div
@@ -63,7 +71,7 @@ const Contact = () => {
         <div className="container">
         <div className="row mb-90">
             <div className="col-md-6 mb-60">
-            <h3>The Runway Inn Luxury Hotel</h3>
+            <h3>The Runway Inn Airport Boutique Hotel</h3>
             <p>
                 The Runway Inn Luxury Hotel! Whether you have inquiries about
                 reservations, special accommodations, or simply want to discuss how
@@ -99,7 +107,7 @@ const Contact = () => {
             </div>
             <div className="col-md-5 mb-30 offset-md-1">
             <h3>Get in touch</h3>
-            <form method="post" className="contact__form" action="./send-email.php" onSubmit={handleSubmit}>
+            <form method="post" className="contact__form" action="send-mail.php" onSubmit={handleSubmit}>
                 {/* form message */}
                 <div className="row">
                 <div className="col-12">
@@ -160,14 +168,13 @@ const Contact = () => {
                 </div>
                 <div className="col-md-12">
                     <button type="submit" className="butn-dark2">
-                    <span>Send Message</span>
+                        <span>Send Message</span>
                     </button>
                 </div>
                 </div>
             </form>
             </div>
         </div>
-        
         </div>
     </section>
     </>

@@ -30,21 +30,21 @@ const Footer = () => {
                                     </select>
                                 </div> */}
                                 <div className="footer-about-social-list">
-                        <Link to="#">
+                        <Link to="https://www.instagram.com/hotel_runway_inn/?igsh=cng5czlmMXd5am84&utm_source=qr">
                             <i className="ti-instagram" />
                         </Link>
-                        <Link to="#">
+                        {/* <Link to="#">
                             <i className="ti-twitter" />
-                        </Link>
-                        <Link to="#">
+                        </Link> */}
+                        {/* <Link to="#">
                             <i className="ti-youtube" />
-                        </Link>
-                        <Link to="#">
+                        </Link> */}
+                        <Link to="https://www.facebook.com/hotelrunwayinn?mibextid=ibOpuV">
                             <i className="ti-facebook" />
                         </Link>
-                        <Link to="#">
+                        {/* <Link to="#">
                             <i className="ti-pinterest" />
-                        </Link>
+                        </Link> */}
                         <Link to="#">
                             <i className="ti-whatsapp" />
                         </Link>

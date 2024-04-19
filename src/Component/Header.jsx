@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const scrollToSection = (id) => {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
   
  
   const scrollToTop = () => {
@@ -91,9 +91,9 @@ const Header = () => {
             <i className="ti-angle-down"></i>
           </Link>
           <ul className="dropdown-menu">
+            <li><a href="/Room#premium-economy" className="dropdown-item nav-link1"><span>Premium Economy</span></a></li>
             <li><a href="/Room#business-class" className="dropdown-item nav-link1"><span>Business Class</span></a></li>
             <li><a href="/Room#family-suite" className="dropdown-item nav-link1"><span>Family Suite</span></a></li>
-            <li><a href="/Room#premium-economy" className="dropdown-item nav-link1"><span>Premium Economy</span></a></li>
             <li><a href="/Room#maharaja-suite" className="dropdown-item nav-link1"><span>Maharaja Suite</span></a></li>
           </ul>
         </li>
@@ -107,11 +107,11 @@ const Header = () => {
             Gallery
           </Link>
         </li>
-        <li className="nav-item" onClick={scrollToTop}>
+        {/* <li className="nav-item" onClick={scrollToTop}>
           <Link className="nav-link link nav-link1" to="/awards-and-achievements">
             Awards & recognition
           </Link>
-        </li>
+        </li> */}
         <li className="nav-item dropdown" onClick={scrollToTop}>
           <Link className="nav-link link dropdown-toggle" to="/Restaurant">
             Dining<i className="ti-angle-down"></i>
@@ -122,6 +122,9 @@ const Header = () => {
             </li>
             <li className="dropdown-item nav-link1">
               <Link to="/simply-benaras">Simply Benares</Link>
+            </li>
+            <li className="dropdown-item nav-link1">
+              <Link to="/SatvikBhoj">Satvik Bhoj</Link>
             </li>
           </ul>
         </li>

@@ -1,8 +1,15 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
 
 const Gallery = () => {
   return (
     <>
+     <Helmet>
+            <meta charSet="utf-8" />
+            <title>Experience Varanasi's Charm Through Our Gallery - Hotel Runway Inn</title>
+            <meta name="description" content="Immerse yourself in the beauty of Varanasi with a glimpse into our gallery at Hotel Runway Inn. Discover the warmth and hospitality that awaits you in every corner of our hotel." />
+            <link rel="canonical" href="https://www.hotelrunwayinn.com" />
+        </Helmet>
   <div
     className="banner-header section-padding valign bg-img bg-fixed"
     data-overlay-dark={6}

@@ -1,16 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {Helmet} from "react-helmet";
  
 const Restaurant = () => {
   return (
     <>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Savor Delightful Flavors at Hotel Runway Inn - A Culinary Journey Awaits</title>
+            <meta name="description" content="Treat your taste buds to a culinary adventure at Hotel Runway Inn. From authentic local cuisine to international delights, our dining options promise to tantalize your senses and leave you craving for more." />
+            <link rel="canonical" href="https://www.hotelrunwayinn.com" />
+        </Helmet>
         <header className="header slider ">
             <div className="owl-carousel owl-theme ">
                 {/* The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. */}
                 <div
                 className="text-center item bg-img"
                 data-overlay-dark={5}
-                data-background="img/images/banner/4.png"
+                data-background="img/images/banner/4.webp"
                 />
                 
                 <div
@@ -21,7 +28,7 @@ const Restaurant = () => {
                 <div
                 className="text-center item bg-img"
                 data-overlay-dark={5}
-                data-background="img/images/banner/2.png"
+                data-background="img/images/banner/2.webp"
                 />
             </div>
             {/* arrow down */}
@@ -142,44 +149,44 @@ const Restaurant = () => {
                         <div className="col-md-5">
                             <div className="menu-info">
                             <h5>
-                                Mozzarella Dippers <span className="price">270₹</span>
+                                Paneer Nazakat <span className="price">270₹</span>
                             </h5>
-                            <p>Fried mozzarella sticks, marinara sauce</p>
+                            <p>Paneer, non-melting cheese</p>
                             </div>
                             <div className="menu-info">
                             <h5>
-                                Onion Rings <span className="price">320₹</span>
+                                Paneer Dilkhush Kebab<span className="price">320₹</span>
                             </h5>
-                            <p>Fried onion rings, smoked aioli</p>
+                            <p>Cashews, paneer, oil, clarified butter, and assorted spices</p>
                             </div>
                             <div className="menu-info">
                             <h5>
-                                Fried Jalapeno <span className="price">152₹</span>
+                                Corn Cheese Roll <span className="price">152₹</span>
                             </h5>
-                            <p>Fried jalapeno pickles, cheddar sauce</p>
+                            <p>Golden corn and cheese rolls, crispy and savory.</p>
                             </div>
                         </div>
                         <div className="col-md-5 offset-md-2">
                             <div className="menu-info">
                             <h5>
-                                Chicken Wings <span className="price">150₹</span>
+                                Seekh Kebab <span className="price">150₹</span>
                             </h5>
                             <p>
-                                Spicy chicken wings, blue cheese sauce, carrot, celery
+                                Grilled, spiced meat skewers, bursting with flavor
                             </p>
                             </div>
                             <div className="menu-info">
                             <h5>
-                                Chilli Con Carne <span className="price">320₹</span>
+                                Chicken Galoti<span className="price">320₹</span>
                             </h5>
-                            <p>Spicy ground beef, bacon, kidney beans</p>
+                            <p>Tender chicken marinated in spices, grilled to perfection</p>
                             </div>
                             <div className="menu-info">
                             <h5>
-                                Potato Skins <span className="price">420₹</span>
+                                Chicken Tikka Malai <span className="price">420₹</span>
                             </h5>
                             <p>
-                                Crispy potato skins; bacon &amp; cheddar or vegetables
+                                Creamy marinated chicken, spiced yogurt
                             </p>
                             </div>
                         </div>
@@ -187,11 +194,11 @@ const Restaurant = () => {
                     </div>
                     <div className='text-center'>
                     <button type="submit" className="btn btn-danger mt-5">
-                        <Link to='/img/SIMPLY_BENARAS_MENU.pdf' target="_blank" download>Download Menu</Link>                    
+                        <Link to='/img/SIMPLY BENARAS MENU FINAL.pdf' target="_blank" download>Download Menu</Link>                    
                     </button>
                     </div>
                     {/* Mains */}
-                    <div id="tab-2-content" className="cont">
+                    {/* <div id="tab-2-content" className="cont">
                         <div className="row">
                         <div className="col-md-5">
                             <div className="menu-info">
@@ -248,9 +255,9 @@ const Restaurant = () => {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* Salads */}
-                    <div id="tab-3-content" className="cont">
+                    {/* <div id="tab-3-content" className="cont">
                         <div className="row">
                         <div className="col-md-5">
                             <div className="menu-info">
@@ -304,9 +311,9 @@ const Restaurant = () => {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* Wine */}
-                    <div id="tab-4-content" className="cont">
+                    {/* <div id="tab-4-content" className="cont">
                         <div className="row">
                         <div className="col-md-5">
                             <div className="menu-info">
@@ -350,9 +357,9 @@ const Restaurant = () => {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* Breakfast */}
-                    <div id="tab-5-content" className="cont">
+                    {/* <div id="tab-5-content" className="cont">
                         <div className="row">
                         <div className="col-md-5">
                             <div className="menu-info">
@@ -403,9 +410,9 @@ const Restaurant = () => {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* Dessert */}
-                    <div id="tab-6-content" className="cont">
+                    {/* <div id="tab-6-content" className="cont">
                         <div className="row">
                         <div className="col-md-5">
                             <div className="menu-info">
@@ -452,7 +459,7 @@ const Restaurant = () => {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
                 </div>
@@ -520,7 +527,7 @@ const Restaurant = () => {
                     <div className="section-title ">Aqua Lounge</div>
                     <img src="img/images/restaurant/aqua.png" alt="" className="ms-5 w-25 h-25" />
                 </div>
-                <img src="img/rooms/resturant.png" alt="" className="mt-30 mb-30" />
+                <img src="img/images/restaurant/resturant-Copy.png" alt="" className="mt-30 mb-30" />
                 </div>
             </div>
             </div>

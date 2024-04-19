@@ -1,9 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {Helmet} from "react-helmet";
 
 const Home = () => {
   return (
     <>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Hotel Runway Inn - Best Hotel in Varanasi Near Babatpur Airport</title>
+            <meta name="description" content="Prepare for a runway-worthy stay at Hotel Runway Inn, your cozy oasis just a skip away from Varanasi's Lal Bahadur Shastri International Airport. Come on in and let us pamper you with warmth and comfort for a truly delightful Varanasi adventure." />
+            <link rel="canonical" href="https://www.hotelrunwayinn.com" />
+        </Helmet>
         <header className="header slider-fade">
             <div className="owl-carousel owl-theme">
             {/* The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. */}
@@ -22,7 +29,7 @@ const Home = () => {
                             <i className="star-rating" />
                             <i className="star-rating" />
                         </span>
-                        <h4>Luxury Hotel &amp; Best Resort</h4>
+                        <h4>Luxury Airport Hotel </h4>
                         <h1>Enjoy a Luxury Experience</h1>
                         <div className="butn-light mt-30 mb-30">
                             {" "}
@@ -66,7 +73,7 @@ const Home = () => {
             <div
                 className="text-center item bg-img"
                 data-overlay-dark={6}
-                data-background="img/slider/20.webp"
+                data-background="img/slider/rooftop.webp"
             >
                 <div className="v-middle caption">
                     <div className="container">
@@ -79,7 +86,7 @@ const Home = () => {
                             <i className="star-rating" />
                         </span>
                         <h4>The Ultimate Luxury Experience</h4>
-                        <h1>Enjoy The Best Moments of Life</h1>
+                        <h1>Luxury Boutique Airport Hotel</h1>
                         <div className="butn-light mt-30 mb-30">
                             {" "}
                             <a href="/" data-scroll-nav={1}>
@@ -130,22 +137,12 @@ const Home = () => {
                     className="w-25"
                 /></div> */}
                 <p>
-                    Hotel Runway Inn is conveniently located just outside Lal Bahadur
-                    Shastri International Airport, Varanasi and is well suited to
-                    business and leisure travelers. Guests return to the upscale
-                    furnishings found in our contemporary rooms and suites, after a busy
-                    day and take time to indulge in our world class amenities and
-                    services.
-                </p>
+                Hotel Runway Inn, conveniently located just outside Lal Bahadur Shastri International Airport in Varanasi, caters to both business and leisure travelers. Our commitment to hospitality excellence shines through our array of top-tier amenities and services, ensuring every guest's stay is marked by unparalleled comfort and satisfaction.</p>
+                    {/* <p>Guests return to the upscale furnishings found in our contemporary rooms and suites, after a busy day and take time to indulge in our world class amenities and services.</p> */}
                 <p>
-                    Sleek style, plush furnishings and modern decor combine to create an
-                    unforgettable stay at Hotel Runway Inn. Each of our 31 contemporary
-                    designed well-appointed rooms and suites offer incredible
-                    views.Enjoy all conveniences and select from Economy, Premium
-                    Economy, Business Class and Maharaja Suite. Enjoy our roof top
-                    Swimming Pool with Green lawns and indulge in the open dining area,
-                    relishing the ambience &amp; beauty.
+                Sleek style, plush furnishings, and modern decor combine to create an unforgettable stay at Hotel Runway Inn. Each of our 31 contemporary designed well-appointed rooms and suites offer incredible views. Enjoy all conveniences and select from Economy, Premium Economy, Business Class, and Maharaja Suite. Plus, revel in the delightful culinary experience at our rooftop restaurant Aqua Lounge, boasting a swimming pool and ample seating area perfect for small parties.
                 </p>
+                <p>With a 4.5-star rating on Google, our dedication to providing exceptional hospitality is recognized and celebrated by our valued guests.</p>
                 {/* call */}
                 <div className="reservations">
                     <div className="icon">
@@ -252,10 +249,10 @@ const Home = () => {
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">7000₹ / Night</a>
+                        <a href="/Room">7000₹ / Night</a>
                     </h6>
                     <h5>
-                        <a href="room-details.html">Premium Suite</a>
+                        <Link to="/Room">Premium Suite</Link>
                     </h5>
                     <div className="line" />
                     <div className="row facilities">
@@ -301,10 +298,10 @@ const Home = () => {
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">5000₹ / Night</a>
+                        <a href="/Room">5000₹ / Night</a>
                     </h6>
                     <h5>
-                        <a href="room-details.html">Business Suite</a>
+                        <a href="/Room">Business Suite</a>
                     </h5>
                     <div className="line" />
                     <div className="row facilities">
@@ -339,17 +336,17 @@ const Home = () => {
                 <div className="item">
                     <div className="position-re o-hidden">
                     {" "}
-                    <img src="img/images/Family Suite Edited/4-copy - Copy.png" alt="" />{" "}
+                    <img src="img/images/Family Suite Edited/4.webp" alt="" />{" "}
                     </div>{" "}
                     <span className="category">
                     <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">6000₹ / Night</a>
+                        <a href="/Room">6000₹ / Night</a>
                     </h6>
                     <h5>
-                        <a href="room-details.html">Family Suite</a>
+                        <a href="/Room">Family Suite</a>
                     </h5>
                     <div className="line" />
                     <div className="row facilities">
@@ -394,10 +391,10 @@ const Home = () => {
                     </span>
                     <div className="con">
                     <h6>
-                        <a href="room-details.html">9000₹ / Night</a>
+                        <a href="/Room">9000₹ / Night</a>
                     </h6>
                     <h5>
-                        <a href="room-details.html">Maharaja Suite</a>
+                        <a href="/Room">Maharaja Suite</a>
                     </h5>
                     <div className="line" />
                     <div className="row facilities">
@@ -799,8 +796,8 @@ const Home = () => {
                 data-animate-effect="fadeInLeft"
                 >
                 <div className="img left">
-                    <a href="restaurant.html">
-                    <img src="img/images/restaurant/4-1-Copy.png" alt="" />
+                    <a href="/simply-benaras">
+                    <img src="img/images/restaurant/4-1-Copy.webp" alt="" />
                     </a>
                 </div>
                 </div>
@@ -813,7 +810,7 @@ const Home = () => {
                     <div className="info">
                         <h6>Discover</h6>
                     </div>
-                    <h4>The Restaurant</h4>
+                    <h4>Simply Benares</h4>
                     {/* <p>
                         A Multicuisine Casual Dining Restaurant.Fresh and exciting
                         multi-cuisine takes centre stage here with 55-60 Cover, Full Day
@@ -822,7 +819,7 @@ const Home = () => {
                     <p>Nestled just outside Varanasi Airport, our multicuisine casual dining restaurant offers a delightful culinary experience with its fresh and exciting menu. With a seating capacity of 55-60 covers, our restaurant provides a welcoming ambience for guests to indulge in a full day dining experience. Whether you're craving Indian delicacies, international flavors, or fusion dishes, our menu caters to all tastes, promising a memorable dining experience. Join us to savor the finest in multi-cuisine dining, where every dish is a culinary masterpiece crafted with passion and care.</p>
                     <div className="butn-dark">
                         {" "}
-                        <a href="restaurant.html">
+                        <a href="/simply-benaras">
                         <span>Learn More</span>
                         </a>{" "}
                     </div>
@@ -849,7 +846,7 @@ const Home = () => {
                     </p>
                     <div className="butn-dark">
                         {" "}
-                        <a href="/">
+                        <a href="/aqua-lounge">
                         <span>Learn More</span>
                         </a>{" "}
                     </div>
@@ -861,8 +858,8 @@ const Home = () => {
                 data-animate-effect="fadeInRight"
                 >
                 <div className="img">
-                    <a href="/">
-                    <img src="img/images/Pool Area Edited/3-1.png" alt="" />
+                    <a href="/aqua-lounge">
+                    <img src="img/images/Pool Area Edited/3-1.webp" alt="" />
                     </a>
                 </div>
                 </div>
@@ -873,7 +870,7 @@ const Home = () => {
                 data-animate-effect="fadeInLeft"
                 >
                 <div className="img left">
-                    <a href="/">
+                    <a href="/Banquet">
                     <img src="img/images/banquet/IMG_2093.1.jpg" alt="" />
                     </a>
                 </div>
@@ -896,7 +893,7 @@ const Home = () => {
                     </p>
                     <div className="butn-dark">
                         {" "}
-                        <a href="/">
+                        <a href="/Banquet">
                         <span>Learn More</span>
                         </a>{" "}
                     </div>
@@ -923,7 +920,7 @@ const Home = () => {
                     </p>
                     <div className="butn-dark">
                         {" "}
-                        <a href="/">
+                        <a href="/aqua-lounge">
                         <span>Learn More</span>
                         </a>{" "}
                     </div>
@@ -935,8 +932,8 @@ const Home = () => {
                 data-animate-effect="fadeInRight"
                 >
                 <div className="img">
-                    <a href="/">
-                    <img src="img/images/Pool Area Edited/IMG_2143-1.jpg" alt="" />
+                    <a href="/aqua-lounge">
+                    <img src="img/images/restaurant/12.webp" alt="" />
                     </a>
                 </div>
                 </div>

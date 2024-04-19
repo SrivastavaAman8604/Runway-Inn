@@ -1,5 +1,5 @@
 import React from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 
 const Aqua = () => {
@@ -8,7 +8,8 @@ const Aqua = () => {
           <div
     className="banner-header section-padding valign bg-img bg-fixed"
     data-overlay-dark={6}
-    data-background="img/images/banner/1.webp"
+    // data-background="img/images/banner/1.webp"
+    style={{backgroundImage: 'url("/img/images/banner/1.webp")'}}
   >
     <div className="container">
       <div className="row">
@@ -82,18 +83,24 @@ const Aqua = () => {
                     <img src="img/images/restaurant/aqua.png" alt="" className="ms-5 w-25 h-25" />
                 </div>
                 {/* <img src="img/rooms/resturant.png" alt="" className="mt-30 mb-30" /> */}
-                <Carousel showIndicators={false} showThumbs={false}>
-                  <div>
+                <Carousel showIndicators={false} showThumbs={false} autoPlay={true} infiniteLoop={true}>
+                  {/* <div>
+                    <img src="img/images/restaurant/2.1.png" alt="" />
+                  </div> */}
+                  {/* <div>
                     <img src="img/images/restaurant/1-Copy.png" alt=""  />
-                  </div>
+                  </div> */}
                   <div>
                     <img src="img/images/restaurant/resturant-Copy.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/images/restaurant/12.png" alt="" />
                   </div>
                   <div>
                     <img src="img/images/restaurant/3-1-Copy.png" alt="" />
                   </div>
                   <div>
-                    <img src="img/images/restaurant/2-Copy.png" alt="" />
+                    <img src="img/images/restaurant/11.png" alt="" />
                   </div>
                  
             </Carousel>
