@@ -15,7 +15,7 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         try {
             const response = await fetch('https://www.hotelrunwayinn.com/send-mail.php', {
                 method: 'POST',
@@ -24,11 +24,19 @@ const Contact = () => {
                 },
                 body: JSON.stringify(formData),
             });
-
+    
             if (response.ok) {
                 const result = await response.json();
                 if (result.success) {
                     console.log('Email sent successfully');
+                    // Reset form fields
+                    setFormData({
+                        name: '',
+                        email: '',
+                        phone: '',
+                        subject: '',
+                        message: ''
+                    });
                     // Add any success message or redirection logic here
                 } else {
                     console.error('Failed to send email');
