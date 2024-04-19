@@ -5,6 +5,7 @@ const Contact = () => {
         name: '',
         email: '',
         phone: '',
+        subject: '',
         message: ''
     });
 
@@ -16,7 +17,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:3000/send-mail.php', {
+            const response = await fetch('https://www.hotelrunwayinn.com/send-mail.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -42,7 +43,6 @@ const Contact = () => {
             // Handle error scenario
         }
     };
-
   return (
     <>
   <div
