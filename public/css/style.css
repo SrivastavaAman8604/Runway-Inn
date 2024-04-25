@@ -782,7 +782,8 @@ color: #aa8453;
 
 /* ======= Section style ======= */
 .section-padding {
-    padding: 120px 0;
+    padding: 50px 0;
+    /* padding: 120px 0; */
 }
 .section-padding2 {
     padding: 0 0 120px 0;
@@ -2972,7 +2973,7 @@ hr.border-2 {
     z-index: 1;
     margin-bottom: 30px;
     line-height: 1;
-    border: 1px solid #f1eeeb;
+    /* border: 1px solid #f1eeeb; */
 }
 .facilties .single-facility h5 {
     font-size: 24px;
@@ -3146,8 +3147,70 @@ hr {
   }  
 }
 @media screen and (max-width: 480px) {
+    .facilties .single-facility {
+        padding: 5px 5px;
+        border-right: none;
+    }
+    .slider-fade .item .caption {
+        z-index: 9;
+        top: 140%;
+        
+    }
+    .header .caption h4 {
+        color: #000;
+    }
+    .header .caption h1 {
+        font-size: 23px!important;
+        color: #000;
+    }
+    .slider-fade .item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 60%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .about.imageabout {
+        background-image: none!important;
+      }
+      .mobimg{
+        display: block!important;
+      }
+    /* .about.imageabout {
+        background-image: url("../img/New image/vr-bg.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        position: relative;
+      }
+    
+      .about.imageabout::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/New image/vr-bg.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        filter: blur(10px);
+        -webkit-filter: blur(10px); 
+      }
+    
+      .about.imageabout > .container {
+        position: relative;
+        z-index: 1; 
+      } */
+    /* .card.mobcard{
+        margin-left: 20px;
+    } */
     .section-title {
         font-size: 39px;
+    }
+    .section-title.abt {
+        font-size: 23px;
     }
     .rooms1 .item {
         position: relative;
@@ -3164,7 +3227,12 @@ hr {
     .services .content .date h3 {
     font-size: 40px;
   }
-  
+  .pricing-card .amount {
+    font-size: 20px!important;
+  }
+  .mob{
+    margin-left: 80%;
+  }
 }
 
 
@@ -4007,8 +4075,9 @@ button.mfp-arrow {
   margin: 0;
   line-height: 1;
  font-family: 'Gilda Display', serif;
-  font-size: 40px;
+  font-size: 22px;
   margin-bottom: 20px;
+  margin-top: 8px;
     color: #aa8453;
 }
 .pricing-card .amount span {
@@ -5507,3 +5576,16 @@ select {
         text-align: center;
     }
 }
+
+.about.imageabout{
+    background-image: url("../img/New image/vr-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.mobimg{
+    display: none;
+  }
+
+ .border-right{
+    border-right: 1px solid #f1eeeb;
+ } 
