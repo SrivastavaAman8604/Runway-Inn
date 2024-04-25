@@ -1,15 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
+  const [isRoomDropdownOpen, setIsRoomDropdownOpen] = useState(false);
+  const [isRestaurantDropdownOpen, setIsRestaurantDropdownOpen] = useState(false);
 
-  // const scrollToSection = (id) => {
-  //   const element = document.getElementById(id);
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // };
-  
+  const toggleRoomDropdown = () => {
+    setIsRoomDropdownOpen(!isRoomDropdownOpen);
+    setIsRestaurantDropdownOpen(false); // Close restaurant dropdown
+  };
+
+  const toggleRestaurantDropdown = () => {
+    setIsRestaurantDropdownOpen(!isRestaurantDropdownOpen);
+    setIsRoomDropdownOpen(false); // Close room dropdown
+  };
  
   const scrollToTop = () => {
     window.scrollTo({
@@ -61,42 +65,20 @@ const Header = () => {
             Home
             <i className="ti-angle-down"></i> 
           </Link>*/}
-          {/* <ul className="dropdown-menu">
-                      <li><a href="index-2.html" className="dropdown-item active"><span>Home Layout 1</span></a></li>
-                      <li><a href="index2.html" className="dropdown-item"><span>Home Layout 2</span></a></li>
-                      <li><a href="index3.html" className="dropdown-item"><span>Home Layout 3</span></a></li>
-                      <li><a href="index4.html" className="dropdown-item"><span>Home Layout 4</span></a></li>
-                      <li><a href="index5.html" className="dropdown-item"><span>Video 1</span></a></li>
-                      <li><a href="index6.html" className="dropdown-item"><span>Video 2</span></a></li>
-                      <li><a href="index7.html" className="dropdown-item"><span>Video 3</span></a></li>
-                      <li><a href="index8.html" className="dropdown-item"><span>Slideshow 1</span></a></li>
-                      <li><a href="index9.html" className="dropdown-item"><span>Slideshow 2</span></a></li>
-                      <li><a href="index10.html" className="dropdown-item"><span>Slideshow 3</span></a></li>
-                      <li><a href="index11.html" className="dropdown-item"><span>Parallax Image 1</span></a></li>
-                      <li><a href="index12.html" className="dropdown-item"><span>Parallax Image 2</span></a></li>
-                      <li><a href="index13.html" className="dropdown-item"><span>Parallax Image 3</span></a></li>
-                      <li><a href="index14.html" className="dropdown-item"><span>Grid Background 1</span></a></li>
-                      <li><a href="index15.html" className="dropdown-item"><span>Grid Background 2</span></a></li>
-                  </ul>     
-        </li> */}
-        <li className="nav-item" onClick={scrollToTop}>
-          <Link className="nav-link link nav-link1" to="/Tariff">
-            Tariff
-          </Link>
-        </li>
-        <li className="nav-item dropdown" onClick={scrollToTop}>
-          {" "}
-          <Link className="nav-link link dropdown-toggle" to="/Room">
-            Rooms
-            <i className="ti-angle-down"></i>
-          </Link>
-          <ul className="dropdown-menu">
-            <li><a href="/Room#premium-economy" className="dropdown-item nav-link1"><span>Premium Economy</span></a></li>
-            <li><a href="/Room#business-class" className="dropdown-item nav-link1"><span>Business Class</span></a></li>
-            <li><a href="/Room#family-suite" className="dropdown-item nav-link1"><span>Family Suite</span></a></li>
-            <li><a href="/Room#maharaja-suite" className="dropdown-item nav-link1"><span>Maharaja Suite</span></a></li>
-          </ul>
-        </li>
+          
+        
+        <li className="nav-item dropdown" onClick={toggleRoomDropdown}>
+              <span className="nav-link link">
+                <span className="nav-link1"><Link to='/room'>Room</Link></span>
+                <i className={`ti-angle-down mob dropdown-toggle`} />
+              </span>
+              <ul className={`dropdown-menu ${isRoomDropdownOpen ? 'show' : ''}`}>
+                <li><a href="/Room#premium-economy" className="dropdown-item nav-link1"><span>Premium Economy</span></a></li>
+                <li><a href="/Room#business-class" className="dropdown-item nav-link1"><span>Business Class</span></a></li>
+                <li><a href="/Room#family-suite" className="dropdown-item nav-link1"><span>Family Suite</span></a></li>
+                <li><a href="/Room#maharaja-suite" className="dropdown-item nav-link1"><span>Maharaja Suite</span></a></li>
+              </ul>
+            </li>
         <li className="nav-item" onClick={scrollToTop}>
           <Link className="nav-link link nav-link1" to="/Banquet">
           Banquets
@@ -112,50 +94,30 @@ const Header = () => {
             Awards & recognition
           </Link>
         </li> */}
-        <li className="nav-item dropdown" onClick={scrollToTop}>
-          <Link className="nav-link link dropdown-toggle" to="/Restaurant">
-            Dining<i className="ti-angle-down"></i>
-          </Link>
-          <ul className="dropdown-menu">
-            <li className="dropdown-item nav-link1">
-              <Link to="/aqua-lounge">Aqua Lounge</Link>
+        <li className="nav-item dropdown" onClick={toggleRestaurantDropdown}>
+              <span className="nav-link link">
+                <span className="nav-link1"><Link to='/restaurant'>Dining</Link></span>
+                <i className={`ti-angle-down mob dropdown-toggle`} />
+              </span>
+              <ul className={`dropdown-menu ${isRestaurantDropdownOpen ? 'show' : ''}`}>
+                <li className="dropdown-item nav-link1">
+                  <Link to="/aqua-lounge">Aqua Lounge</Link>
+                </li>
+                <li className="dropdown-item nav-link1">
+                  <Link to="/simply-benaras">Simply Benares</Link>
+                </li>
+                <li className="dropdown-item nav-link1">
+                  <Link to="/SatvikBhoj">Satvik Bhoj</Link>
+                </li>
+              </ul>
             </li>
-            <li className="dropdown-item nav-link1">
-              <Link to="/simply-benaras">Simply Benares</Link>
-            </li>
-            <li className="dropdown-item nav-link1">
-              <Link to="/SatvikBhoj">Satvik Bhoj</Link>
-            </li>
-          </ul>
-        </li>
         
-        {/* <li className="nav-item"><a className="nav-link" href="/">Spa</a></li> */}
-        {/* <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="wedding.html">Wedding/Events  */}
-        {/* <i className="ti-angle-down"></i> */}
-        {/* </a> */}
-        {/* <ul className="dropdown-menu">
-                      <li><a href="services.html" className="dropdown-item"><span>Services</span></a></li>
-                      <li><a href="facilities.html" className="dropdown-item"><span>Facilities</span></a></li>
-                      <li><a href="gallery.html" className="dropdown-item"><span>Gallery</span></a></li>
-                      <li><a href="team.html" className="dropdown-item"><span>Team</span></a></li>
-                      <li><a href="pricing.html" className="dropdown-item"><span>Pricing</span></a></li>
-                      <li><a href="careers.html" className="dropdown-item"><span>Careers</span></a></li>
-                      <li><a href="faq.html" className="dropdown-item"><span>F.A.Qs</span></a></li>
-                      <li className="dropdown-submenu dropdown"> <a className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="#"><span>Other Pages <i className="ti-angle-right"></i></span></a>
-                          <ul className="dropdown-menu">
-                              <li><a href="404.html" className="dropdown-item"><span>404 Page</span></a></li>
-                              <li><a href="coming-soon.html" className="dropdown-item"><span>Coming Soon</span></a></li>
-                          </ul>
-                      </li>
-                  </ul> */}
-        {/* <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">News  */}
-        {/* <i className="ti-angle-down"></i> */}
-        {/* </a> */}
-        {/* <ul className="dropdown-menu">
-                      <li><a href="/" className="dropdown-item"><span>News 1</span></a></li>
-                      <li><a href="news2.html" className="dropdown-item"><span>News 2</span></a></li>
-                      <li><a href="/" className="dropdown-item"><span>Post Page</span></a></li>
-                  </ul> */}
+        
+                  <li className="nav-item" onClick={scrollToTop}>
+          <Link className="nav-link link nav-link1" to="/Tariff">
+            Tariff
+          </Link>
+        </li>
         <li className="nav-item" onClick={scrollToTop}>
           <Link className="nav-link link nav-link1" to="/Contact">
             Contact

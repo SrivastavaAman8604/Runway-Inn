@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Map from './Map'
 
 const Footer = () => {
 
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className="footer-top">
             <div className="container">
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-3">
                 <div className="footer-column footer-about">
                     <h3 className="footer-title">About Hotel</h3>
                     <p className="footer-about-text">
@@ -54,7 +55,8 @@ const Footer = () => {
                     </div>
                 </div>
                 </div>
-                <div className="col-md-3 offset-md-1">
+                {/* <div className="col-md-3 offset-md-1"> */}
+                <div className="col-md-2 ">
                     <div className="footer-column footer-explore clearfix">
                         <h3 className="footer-title">Explore</h3>
                         <ul className="footer-explore-list list-unstyled">
@@ -65,12 +67,19 @@ const Footer = () => {
                             <Link to="/Room">Rooms &amp; Suites</Link>
                         </li>
                         <li className='link' onClick={scrollToTop}>
+                            <Link to="/Banquet"> Banquets</Link>
+                        </li>
+                        <li className='link' onClick={scrollToTop}>
+                            <Link to="/Gallery"> Gallery</Link>
+                        </li>
+                        <li className='link' onClick={scrollToTop}>
                             <Link to="/Restaurant">Dining</Link>
                         </li>
                         {/* <li><Link to="/">Spa & Wellness</Link></li> */}
                         {/* <li className='link' onClick={scrollToTop}>
                             <Link to="/About">About Hotel</Link>
                         </li> */}
+                        
                         <li className='link' onClick={scrollToTop}>
                             <Link to="/Contact">Contact</Link>
                         </li>
@@ -95,6 +104,11 @@ const Footer = () => {
                         <p className="footer-contact-mail">info@hotelrunwayinn.com</p>
                         <p className="footer-contact-mail">booking.runwayInn@gmail.com</p>
                         </div>
+                    </div>
+                </div>
+                <div className="col-md-3">
+                    <div className="footer-column footer-contact">
+                        <Map/>
                     </div>
                 </div>
             </div>

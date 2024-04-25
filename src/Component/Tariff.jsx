@@ -212,7 +212,7 @@ const Tariff = () => {
             <div className="pricing-card">
                 <img src="img/images/Maharaja Suite Edited/17-1-min.webp" alt="" style={{ aspectRatio: '3/2' }}/>
                 <div className="desc">
-                <div className="name">MAHARAJA SUITE</div>
+                <div className="name">Maharaja Luxury suite</div>
                 <div className="amount">
                 Rs. 16999/-<span>/ day</span>
                 </div>

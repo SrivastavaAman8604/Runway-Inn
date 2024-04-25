@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import {Helmet} from "react-helmet";
+import RoomHome from './RoomHome';
 
 const Home = () => {
   return (
@@ -113,74 +114,65 @@ const Home = () => {
             </div>
         </header>
         {/* About */}
-        <section className="about section-padding">
+        <section className="about section-padding imageabout">
             <div className="container">
             <div className="row">
+                <img  src="img/New image/Vns_airport.jpg" className='mobimg mb-5'/>
                 <div
-                className="col-md-6 mb-30 animate-box"
+                className="col-md-8 mb-30 animate-box"
                 data-animate-effect="fadeInUp"
                 >
-                <span>
+                {/* <span>
                         <i class="star-rating"></i>
                         <i class="star-rating"></i>
                         <i class="star-rating"></i>
                         <i class="star-rating"></i>
-                        {/* <i class="star-rating"></i> */}
                     </span>
                 <div className="section-subtitle">Airport Hotel in Varanasi </div>
                 <div className="section-title">Enjoy a Luxury Experience 
-                {/* <img src="img/images/Gallery Edited/3-removebg-preview.png" alt="" className="w-25"/> */}
+                
                     </div>
-                {/* <div className="section-title">Enjoy a Luxury Experience<img
-                    src="img/images/Gallery Edited/3-removebg-preview.png"
-                    alt=""
-                    className="w-25"
-                /></div> */}
+                
                 <p>
-                Hotel Runway Inn, conveniently located just outside Lal Bahadur Shastri International Airport in Varanasi, caters to both business and leisure travelers. Our commitment to hospitality excellence shines through our array of top-tier amenities and services, ensuring every guest's stay is marked by unparalleled comfort and satisfaction.</p>
-                    {/* <p>Guests return to the upscale furnishings found in our contemporary rooms and suites, after a busy day and take time to indulge in our world class amenities and services.</p> */}
+                <strong>Hotel Runway Inn</strong>, conveniently located just outside Lal Bahadur Shastri International Airport in Varanasi, caters to both business and leisure travelers. Our commitment to hospitality excellence shines through our array of <strong>top-tier amenities and services</strong>, ensuring every guest's stay is marked by unparalleled comfort and satisfaction.</p>
+                    
                 <p>
                 Sleek style, plush furnishings, and modern decor combine to create an unforgettable stay at Hotel Runway Inn. Each of our 31 contemporary designed well-appointed rooms and suites offer incredible views. Enjoy all conveniences and select from Economy, Premium Economy, Business Class, and Maharaja Suite. Plus, revel in the delightful culinary experience at our rooftop restaurant Aqua Lounge, boasting a swimming pool and ample seating area perfect for small parties.
                 </p>
-                <p>With a 4.5-star rating on Google, our dedication to providing exceptional hospitality is recognized and celebrated by our valued guests.</p>
-                {/* call */}
-                <div className="reservations">
-                    <div className="icon">
-                    <span className="flaticon-call" />
+                <p>With a <strong>4.5-star rating on Google</strong>, our dedication to providing exceptional hospitality is recognized and celebrated by our valued guests.</p>
+                 */}
+                 <div className="section-title abt">Ready discover a haven just outside Lal Bahadur Shastri International Airport in Varanasi?</div>
+                 <p> Ready to embark on a journey of comfort and luxury. Welcome to Hotel Runway Inn,your gateway to Varanasi's spiritual allure! Step into modern elegance in rooms and suites, offering stunning views and a range of options from Economy to Maharaja Suite.Indulge in culinary delights at our rooftop Aqua Lounge, where a swimming pool and scenic vistas await.</p>
+
+                 <p>With a stellar <strong>4.5-star rating on Google</strong>, join us for an unforgettable stay marked by unparalleled comfort and satisfaction!</p>
+
+                    <div className="reservations">
+                        <div className="icon">
+                        <span className="flaticon-call" />
+                        </div>
+                        <div className="text">
+                        <p>Reservation</p> <a href="tel:93058 04900">93058 04900</a>
+                        </div>
                     </div>
-                    <div className="text">
-                    <p>Reservation</p> <a href="tel:93058 04900">93058 04900</a>
-                    </div>
-                </div>
                 </div>
                 <div
                 className="col col-md-6 animate-box"
                 data-animate-effect="fadeInUp"
                 >
-                <img
+                {/* <img
                     src="img/images/Gallery Edited/1-1.jpg"
                     alt=""
                     className="mt-90 mb-30"
-                />
-                </div>
-                {/* <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img
-                    src="img/images/Gallery Edited/2-2.png"
+                /> */}
+                {/* <img
+                    src="img/New image/Vns_airport.jpg"
                     alt=""
                     className="mt-90 mb-30"
-                    />
+                /> */}
                 </div>
-                <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img src="img/images/Gallery Edited/1.png" alt="" />
-                </div> */}
-                {/* <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img src="img/rooms/8.jpg" alt="" class="mt-90 mb-30"/>
-                </div>
-                <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img src="img/rooms/2.jpg" alt=""/>
-                </div> */}
+                
             </div>
-            {/* <img src="public/img/images/airport.png"/> */}
+            
             </div>
         </section>
         {/* Rooms */}
@@ -193,52 +185,11 @@ const Home = () => {
                 </div>
             </div>
             <div className="row">
-                {/* <div className="col-md-4">
-                <div className="item">
-                    <div className="position-re o-hidden">
-                    {" "}
-                    <img src="img/images/Business class edited/4.webp" alt="" />{" "}
-                    </div>{" "}
-                    <span className="category">
-                    <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
-                    </span>
-                    <div className="con">
-                    <h6>
-                    <Link to='https://asiatech.in/booking_engine/index3?token=NjAyNw=='>Book Now</Link> 
-                    </h6>
-                    <h5>
-                        <a href="room-details.html">Junior Suite</a>{" "}
-                    </h5>
-                    <div className="line" />
-                    <div className="row facilities">
-                        <div className="col col-md-7">
-                        <ul>
-                            <li>
-                            <i className="flaticon-bed" />
-                            </li>
-                            <li>
-                            <i className="flaticon-bath" />
-                            </li>
-                            <li>
-                            <i className="flaticon-breakfast" />
-                            </li>
-                            <li>
-                            <i className="flaticon-towel" />
-                            </li>
-                        </ul>
-                        </div>
-                        <div className="col col-md-5 text-end">
-                        <div className="permalink">
-                            <a href="rooms.html">
-                            Details <i className="ti-arrow-right" />
-                            </a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div> */}
-                <div className="col-md-6">
+            <RoomHome/>
+
+                
+
+                {/* <div className="col-md-6">
                 <div className="item">
                     <div className="position-re o-hidden">
                     {" "}
@@ -252,7 +203,7 @@ const Home = () => {
                         <a href="/Room">7000₹ / Night</a>
                     </h6>
                     <h5>
-                        <Link to="/Room">Premium Suite</Link>
+                        <Link to="/Room">Premium Economy</Link>
                     </h5>
                     <div className="line" />
                     <div className="row facilities">
@@ -301,7 +252,7 @@ const Home = () => {
                         <a href="/Room">5000₹ / Night</a>
                     </h6>
                     <h5>
-                        <a href="/Room">Business Suite</a>
+                        <a href="/Room">Business Class</a>
                     </h5>
                     <div className="line" />
                     <div className="row facilities">
@@ -424,9 +375,9 @@ const Home = () => {
                     </div>
                     </div>
                 </div>
-                </div>
+                </div> */}
             </div>
-            </div>
+            </div> 
         </section>
         {/* Pricing */}
         {/* <section class="pricing section-padding bg-blck">
@@ -548,7 +499,7 @@ const Home = () => {
             </div> */}
         {/* </section> */}
         {/* Facilties */}
-        <section className="facilties section-padding">
+        <section className="facilties section-padding" >
             <div className="container">
             <div className="row">
                 <div className="col-md-12">
@@ -557,26 +508,29 @@ const Home = () => {
                 </div>
             </div>
             <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 text-center ">
                 <div
-                    className="single-facility animate-box"
+                    className="single-facility animate-box border-right"
                     data-animate-effect="fadeInUp"
                 >
                     <span className="flaticon-swimming" />
                     <h5>Swimming Pool</h5>
                     <p>
+                    Relax and unwind in our inviting swimming pool, a refreshing escape for leisure and relaxation.
+                    </p>
+                    {/* <p>
                     Enjoy a refreshing escape with our inviting swimming pool,
                     offering a perfect blend of relaxation and leisure at our hotel.
-                    </p>
+                    </p> */}
                     <div className="facility-shape">
                     {" "}
                     <span className="flaticon-swimming" />{" "}
                     </div>
                 </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 text-center ">
                 <div
-                    className="single-facility animate-box"
+                    className="single-facility animate-box border-right"
                     data-animate-effect="fadeInUp"
                 >
                     <span className="flaticon-world" />
@@ -588,7 +542,7 @@ const Home = () => {
                     </div>
                 </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 text-center">
                 <div
                     className="single-facility animate-box"
                     data-animate-effect="fadeInUp"
@@ -602,11 +556,9 @@ const Home = () => {
                     </div>
                 </div>
                 </div>
-                <div className="col-md-4">
-                <div
-                    className="single-facility animate-box"
-                    data-animate-effect="fadeInUp"
-                >
+                <div className="col-md-4 text-center ">
+                <div className="single-facility animate-box border-right"
+                    data-animate-effect="fadeInUp">
                     <span className="flaticon-bed" />
                     <h5>Room Service</h5>
                     <p>
@@ -620,16 +572,16 @@ const Home = () => {
                 </div>
                 </div>
                 
-                <div className="col-md-4">
+                <div className="col-md-4 text-center ">
                 <div
-                    className="single-facility animate-box"
+                    className="single-facility animate-box border-right"
                     data-animate-effect="fadeInUp"
                 >
                     <span className="flaticon-wifi" />
                     <h5>Fibre Internet</h5>
                     <p>
                     The hotel offers high-speed fiber internet services for seamless
-                    and fast connectivity during your stay.
+                    and fast connectivity.
                     </p>
                     <div className="facility-shape">
                     {" "}
@@ -637,7 +589,7 @@ const Home = () => {
                     </div>
                 </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 text-center">
                 <div
                     className="single-facility animate-box"
                     data-animate-effect="fadeInUp"
@@ -797,7 +749,7 @@ const Home = () => {
                 >
                 <div className="img left">
                     <a href="/simply-benaras">
-                    <img src="img/images/restaurant/4-1-Copy.webp" alt="" />
+                    <img src="img/images/restaurant/4-1-Copy.webp" alt="best resturant near airport" />
                     </a>
                 </div>
                 </div>
@@ -816,7 +768,8 @@ const Home = () => {
                         multi-cuisine takes centre stage here with 55-60 Cover, Full Day
                         Dining with nice ambience just outside Varanasi Airport.
                     </p> */}
-                    <p>Nestled just outside Varanasi Airport, our multicuisine casual dining restaurant offers a delightful culinary experience with its fresh and exciting menu. With a seating capacity of 55-60 covers, our restaurant provides a welcoming ambience for guests to indulge in a full day dining experience. Whether you're craving Indian delicacies, international flavors, or fusion dishes, our menu caters to all tastes, promising a memorable dining experience. Join us to savor the finest in multi-cuisine dining, where every dish is a culinary masterpiece crafted with passion and care.</p>
+                    <p>Nestled just outside Varanasi Airport, our multicuisine casual dining restaurant offers a delightful culinary experience with its fresh and exciting menu. With a seating capacity of 55-60 covers, our restaurant provides a welcoming ambience for guests to indulge in a full day dining experience.</p>
+                    {/* <p> Whether you're craving Indian delicacies, international flavors, or fusion dishes, our menu caters to all tastes, promising a memorable dining experience. Join us to savor the finest in multi-cuisine dining, where every dish is a culinary masterpiece crafted with passion and care.</p> */}
                     <div className="butn-dark">
                         {" "}
                         <a href="/simply-benaras">
@@ -859,7 +812,7 @@ const Home = () => {
                 >
                 <div className="img">
                     <a href="/aqua-lounge">
-                    <img src="img/images/Pool Area Edited/3-1.webp" alt="" />
+                    <img src="img/images/Pool Area Edited/3-1.webp" alt="Pool Area" />
                     </a>
                 </div>
                 </div>
@@ -871,7 +824,7 @@ const Home = () => {
                 >
                 <div className="img left">
                     <a href="/Banquet">
-                    <img src="img/images/banquet/IMG_2093.1.jpg" alt="" />
+                    <img src="img/images/banquet/IMG_2093.1.jpg" alt="banquet near airport" />
                     </a>
                 </div>
                 </div>
@@ -933,7 +886,7 @@ const Home = () => {
                 >
                 <div className="img">
                     <a href="/aqua-lounge">
-                    <img src="img/images/restaurant/12.webp" alt="" />
+                    <img src="img/images/restaurant/12.webp" alt=" restaurant near airport" />
                     </a>
                 </div>
                 </div>

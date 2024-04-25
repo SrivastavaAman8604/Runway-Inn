@@ -81,7 +81,7 @@ const Contact = () => {
             <div className="col-md-6 mb-60">
             <h3>The Runway Inn Airport Boutique Hotel</h3>
             <p>
-                The Runway Inn Luxury Hotel! Whether you have inquiries about
+                Hotel Runway Inn Whether you have inquiries about
                 reservations, special accommodations, or simply want to discuss how
                 we can make your stay extraordinary, our team is here to assist.
                 Connect with us via the provided contact details, and let us turn

@@ -10,7 +10,7 @@ import Restaurant from './Component/Resturant';
 import Contact from './Component/Contact';
 import Tariff from './Component/Tariff';
 import Gallery from './Component/Gallery';
-import Map from './Component/Map';
+// import Map from './Component/Map';
 import Award from './Component/Award';
 import Banquet from './Component/Banquet';
 import Aqua from './Component/Aqua';
@@ -46,7 +46,7 @@ function App() {
         <Route path='/SatvikBhoj' element={<SatvikBhoj/>}/>
       </Routes>
       {/* <Form/> */}
-      <Map/>
+      {/* <Map/> */}
       <Footer/>
       <Button/>
     </Router>

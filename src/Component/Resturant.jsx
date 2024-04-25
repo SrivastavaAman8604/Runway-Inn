@@ -149,19 +149,19 @@ const Restaurant = () => {
                         <div className="col-md-5">
                             <div className="menu-info">
                             <h5>
-                                Paneer Nazakat <span className="price">270₹</span>
+                                Paneer Najakat <span className="price">₹450</span>
                             </h5>
                             <p>Paneer, non-melting cheese</p>
                             </div>
                             <div className="menu-info">
                             <h5>
-                                Paneer Dilkhush Kebab<span className="price">320₹</span>
+                                PANEER DIL KHUSH KEBAB<span className="price">₹430</span>
                             </h5>
                             <p>Cashews, paneer, oil, clarified butter, and assorted spices</p>
                             </div>
                             <div className="menu-info">
                             <h5>
-                                Corn Cheese Roll <span className="price">152₹</span>
+                                Corn Cheese Roll <span className="price">₹450</span>
                             </h5>
                             <p>Golden corn and cheese rolls, crispy and savory.</p>
                             </div>
@@ -169,7 +169,7 @@ const Restaurant = () => {
                         <div className="col-md-5 offset-md-2">
                             <div className="menu-info">
                             <h5>
-                                Seekh Kebab <span className="price">150₹</span>
+                                Seekh Kebab <span className="price">₹450</span>
                             </h5>
                             <p>
                                 Grilled, spiced meat skewers, bursting with flavor
@@ -177,13 +177,13 @@ const Restaurant = () => {
                             </div>
                             <div className="menu-info">
                             <h5>
-                                Chicken Galoti<span className="price">320₹</span>
+                                CHICKEN GALOUTI KEBAB<span className="price">₹450</span>
                             </h5>
                             <p>Tender chicken marinated in spices, grilled to perfection</p>
                             </div>
                             <div className="menu-info">
                             <h5>
-                                Chicken Tikka Malai <span className="price">420₹</span>
+                                MURG MALAI TIKKA <span className="price">₹450</span>
                             </h5>
                             <p>
                                 Creamy marinated chicken, spiced yogurt
@@ -197,269 +197,7 @@ const Restaurant = () => {
                         <Link to='/img/SIMPLY BENARAS MENU FINAL.pdf' target="_blank" download>Download Menu</Link>                    
                     </button>
                     </div>
-                    {/* Mains */}
-                    {/* <div id="tab-2-content" className="cont">
-                        <div className="row">
-                        <div className="col-md-5">
-                            <div className="menu-info">
-                            <h5>
-                                Rusty’s Burger <span className="price">27₹</span>
-                            </h5>
-                            <p>
-                                Smoked pulled beef ribs, bbq sauce, cheddar, crispy
-                                onion
-                            </p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Cajun Fish Steak <span className="price">32₹</span>
-                            </h5>
-                            <p>
-                                Cajun spicied seabass, deep fried baby potatoes, side
-                                salad
-                            </p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Southern Fried Chicken{" "}
-                                <span className="price">52₹</span>
-                            </h5>
-                            <p>
-                                Cajun coated chicken breast, fries and honey mustard
-                            </p>
-                            </div>
-                        </div>
-                        <div className="col-md-5 offset-md-2">
-                            <div className="menu-info">
-                            <h5>
-                                Crab Cake <span className="price">37₹</span>
-                            </h5>
-                            <p>
-                                Breaded crab cakes, tartar sauce, apple and fennel salad
-                            </p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Baby Back Ribs <span className="price">32₹</span>
-                            </h5>
-                            <p>Bbq glazed baby pork ribs, coleslaw, fries</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Smokehouse Combo <span className="price">42₹</span>
-                            </h5>
-                            <p>
-                                Smoked beef brisket, rib and sausage, coleslaw,
-                                cornbread
-                            </p>
-                            </div>
-                        </div>
-                        </div>
-                    </div> */}
-                    {/* Salads */}
-                    {/* <div id="tab-3-content" className="cont">
-                        <div className="row">
-                        <div className="col-md-5">
-                            <div className="menu-info">
-                            <h5>
-                                Ceaser Salad <span className="price">47₹</span>
-                            </h5>
-                            <p>
-                                Romaine lettuce, croutons, parmigiano, Ceaser dressing.
-                            </p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Waldorf Salad <span className="price">52₹</span>
-                            </h5>
-                            <p>
-                                Lettuce, celery, apple, grape, walnut, waldorf sauce
-                            </p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Quinoa &amp; Avocado Salad{" "}
-                                <span className="price">52₹</span>
-                            </h5>
-                            <p>
-                                Quinoa, avocado, mixed greens. Nuts, dried and fresh
-                                fruits
-                            </p>
-                            </div>
-                        </div>
-                        <div className="col-md-5 offset-md-2">
-                            <div className="menu-info">
-                            <h5>
-                                Grilled Salmon Salad <span className="price">37₹</span>
-                            </h5>
-                            <p>Grilled salmon, mixed greens, capers, orange slices</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Chicken Cobb Salad <span className="price">32₹</span>
-                            </h5>
-                            <p>
-                                Iceberg lettuce, cherry tomatoes, blue cheese, avocado,
-                                bacon
-                            </p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Salad Chicken <span className="price">42₹</span>
-                            </h5>
-                            <p> Ceaser dressing. Optional grilled chicken breast</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div> */}
-                    {/* Wine */}
-                    {/* <div id="tab-4-content" className="cont">
-                        <div className="row">
-                        <div className="col-md-5">
-                            <div className="menu-info">
-                            <h5>
-                                Château d'Yquem 2011 <span className="price">400₹</span>
-                            </h5>
-                            <p>Dessert Wine, Bordeaux, Graves, Sauternes</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Alvear Cream NV <span className="price">30₹</span>
-                            </h5>
-                            <p>Dessert, Fortified Wine, Andalucia</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Chateau D'yquem 1990 <span className="price">900₹</span>
-                            </h5>
-                            <p>Dessert Wine, Bordeaux, Graves, Sauternes</p>
-                            </div>
-                        </div>
-                        <div className="col-md-5 offset-md-2">
-                            <div className="menu-info">
-                            <h5>
-                                La Grande Année 2007 <span className="price">400₹</span>
-                            </h5>
-                            <p>Rosé, Champagne</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Sine Qua Non 2012 <span className="price">520₹</span>
-                            </h5>
-                            <p>Syrah, Shiraz &amp; Blends, California</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                W.S. Keyes Winery 2006{" "}
-                                <span className="price">240₹</span>
-                            </h5>
-                            <p>Merlot, California, Napa, Howell Mountain</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div> */}
-                    {/* Breakfast */}
-                    {/* <div id="tab-5-content" className="cont">
-                        <div className="row">
-                        <div className="col-md-5">
-                            <div className="menu-info">
-                            <h5>
-                                Egg Benedict <span className="price">60₹</span>
-                            </h5>
-                            <p>
-                                English muffin, beef, hollandaise sauce, poached egg.
-                            </p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Texas Benedict <span className="price">30₹</span>
-                            </h5>
-                            <p>English muffin, short ribs, bbq sauce, poached egg.</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Rusty’s Omlette <span className="price">22₹</span>
-                            </h5>
-                            <p>
-                                Mozzarella, cheddar, caramelized onion, black beans.
-                            </p>
-                            </div>
-                        </div>
-                        <div className="col-md-5 offset-md-2">
-                            <div className="menu-info">
-                            <h5>
-                                Salmon Bagel <span className="price">30₹</span>
-                            </h5>
-                            <p>
-                                Smoked salmon, cream cheese, dill, rocket, red onion.
-                            </p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Breakfast Bagel <span className="price">33₹</span>
-                            </h5>
-                            <p>Chocolate, marshmallow, biscuit bar</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Rusty’s Pancake <span className="price">40₹</span>
-                            </h5>
-                            <p>
-                                Strawberry, white chocolate, dark chocolate, crispearls
-                            </p>
-                            </div>
-                        </div>
-                        </div>
-                    </div> */}
-                    {/* Dessert */}
-                    {/* <div id="tab-6-content" className="cont">
-                        <div className="row">
-                        <div className="col-md-5">
-                            <div className="menu-info">
-                            <h5>
-                                Bourbon Pecan Pie <span className="price">67₹</span>
-                            </h5>
-                            <p>Bourbon pecan stuffed pie, vanilla ice-cream</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                New York Cheesecake <span className="price">50₹</span>
-                            </h5>
-                            <p>Cheesecake, strawberry &amp; lime salad</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Rusty’s ice-cream <span className="price">32₹</span>
-                            </h5>
-                            <p>Vanilla, bourbon, cookie, chocolate ice-cream</p>
-                            </div>
-                        </div>
-                        <div className="col-md-5 offset-md-2">
-                            <div className="menu-info">
-                            <h5>
-                                S’mores <span className="price">40₹</span>
-                            </h5>
-                            <p>Chocolate chip cookies, marshmallow, chocolate</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Rocky Road <span className="price">42₹</span>
-                            </h5>
-                            <p>Chocolate, marshmallow, biscuit bar</p>
-                            </div>
-                            <div className="menu-info">
-                            <h5>
-                                Apple &amp; Pear Crumble{" "}
-                                <span className="price">42₹</span>
-                            </h5>
-                            <p>
-                                Caramelized pear and apple, oat crumble, vanilla
-                                ice-cream
-                            </p>
-                            </div>
-                        </div>
-                        </div>
-                    </div> */}
+                    
                     </div>
                 </div>
                 </div>
@@ -531,6 +269,84 @@ const Restaurant = () => {
                 </div>
             </div>
             </div>
+        </section>
+        <section className="rooms-page section-padding" data-scroll-index={1}>
+   
+      <section className="rooms-page section-padding" data-scroll-index={1}>
+            <div className="container">
+            <div className="row">
+                <div className="col-md-6 text-left">
+                {/* <span>
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                </span>
+                <div className="section-subtitle">
+                    Indulge in the Pure Essence of Satvik Bhoj
+                </div>
+                <div className='d-flex'>
+                    <div className="section-title">Spiritual Vegetarian</div>
+                </div> */}
+                
+                <img src="img/images/restaurant/satvik.jpg" alt="" className="mt-30 mb-30" />
+                </div>
+                <div className="col-md-6">
+                <span>
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                    <i className="star-rating" />
+                </span>
+                <div className="section-subtitle">
+                    Indulge in the Pure Essence of Satvik Bhoj
+                </div>
+                <div className='d-flex'>
+                    <div className="section-title">Spiritual Vegetarian</div>
+                </div>
+                <p className="mb-30">
+                Step into a realm of culinary bliss with our "Spiritual Vegetarian" dining experience, meticulously curated for those seeking a deeper connection with their food. Our menu transcends the ordinary by excluding onion and garlic, ensuring that each dish is not just a meal but a spiritual journey.
+                </p>
+                <p className="mb-30">
+                Delight in the simplicity and authenticity of our homemade flavors, crafted with care to nourish both body and soul. Our Satvik Bhoj embodies the essence of purity, offering a symphony of flavors that dance on your palate. Every bite is a revelation, a testament to the artistry and dedication we put into every dish.
+                </p>
+                <p className="mb-30">
+                Join us on this gastronomic adventure, where food is not just sustenance but a gateway to a higher culinary experience.
+                </p>
+                <h6>Hours</h6>
+                <ul className="list-unstyled page-list mb-30">
+                    <li>
+                    <div className="page-list-icon">
+                        {" "}
+                        <span className="ti-time" />{" "}
+                    </div>
+                    <div className="page-list-text">
+                        <p>Breakfast: 7.00 am – 11.00 am (daily)</p>
+                    </div>
+                    </li>
+                    <li>
+                    <div className="page-list-icon">
+                        {" "}
+                        <span className="ti-time" />{" "}
+                    </div>
+                    <div className="page-list-text">
+                        <p>Lunch: 12.00 noon – 2.00 pm (daily)</p>
+                    </div>
+                    </li>
+                    <li>
+                    <div className="page-list-icon">
+                        {" "}
+                        <span className="ti-time" />{" "}
+                    </div>
+                    <div className="page-list-text">
+                        <p>Dinner: open from 6.30 pm, last order at 10.00 pm (daily)</p>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </section>
         </section>
     </>
 

@@ -59,9 +59,9 @@ const Room = () => {
             <img src="img/images/Premium Economy/8.webp" alt="" className="img-fluid"/>
             </figure>
             <div className="caption">
-              <h3>
+              {/* <h3>
                 7000₹ <span>/ Night</span>
-              </h3>
+              </h3> */}
               <h4>
                 <a href="/">Premium Economy </a>
               </h4>
@@ -125,9 +125,9 @@ const Room = () => {
               <img src="img/images/Business class edited/IMG_3104.1 - Copy.JPG" alt="" className="img-fluid" style={{aspectRatio:'5/3'}}/>
             </figure>
             <div className="caption">
-              <h3>
+              {/* <h3>
                 5000₹ <span>/ Night</span>
-              </h3>
+              </h3> */}
               <h4>
                 <a href="/">Business Class</a>
               </h4>
@@ -191,9 +191,9 @@ const Room = () => {
             <img src="img/images/Family Suite Edited/1-1.jpg" alt="" className="img-fluid"/>
             </figure>
             <div className="caption">
-              <h3>
+              {/* <h3>
                 6000₹ <span>/ Night</span>
-              </h3>
+              </h3> */}
               <h4>
                 <a href="/">Family Suite</a>
               </h4>
@@ -255,11 +255,11 @@ const Room = () => {
               <img src="img/images/Maharaja Suite Edited/17-1-min.webp" alt="" className="img-fluid"/>
             </figure>
             <div className="caption">
-              <h3>
+              {/* <h3>
                 9000₹ <span>/ Night</span>
-              </h3>
+              </h3> */}
               <h4>
-                <a href="/">Maharaja Suite</a>
+                <a href="/">Maharaja Luxury suite</a>
               </h4>
               <p>
                 Indulge in luxury with our Maharaja Suite, featuring exquisite decor and personalized service fit for royalty.
