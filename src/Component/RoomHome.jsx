@@ -32,7 +32,7 @@ const RoomHome = () => {
         <div className="card mobcard" style={{width: '22rem'}}>
             <img src="img/images/Premium Economy/8.webp" alt="" style={{aspectRatio:'3/2'}}/>
                 <div className="card-body">
-                <h5 className="card-title"><Link to="/Room">Premium Economy</Link></h5>
+                <h4 className="card-title"><Link to="/Room">Premium Economy</Link></h4>
                 <p>
                 Experience comfort and style in our Premium Economy Suite, offering modern amenities and a relaxing ambiance at an affordable price.
               </p>
@@ -84,7 +84,7 @@ const RoomHome = () => {
                         style={{aspectRatio:'3/2'}}
                     />{" "}
             <div className="card-body">
-                <h5 className="card-title"><a href="/Room">Business Class</a></h5>
+                <h4 className="card-title"><a href="/Room">Business Class</a></h4>
                 <p>
                 Stay productive and unwind in our Business Suite, featuring a dedicated workspace and luxurious amenities for business travelers.
               </p>
@@ -132,7 +132,7 @@ const RoomHome = () => {
         <div className="card mobcard" style={{width: '22rem'}}>
         <img src="img/images/Family Suite Edited/4.webp" alt="" style={{aspectRatio:'3/2'}}/>{" "}
             <div className="card-body">
-                <h5 className="card-title"><a href="/Room">Family Suite</a></h5>
+                <h4 className="card-title"><a href="/Room">Family Suite</a></h4>
                 <p>
                 Create lasting memories in our spacious Family Suite, designed to accommodate your family with comfort and convenience in mind.
               </p>
@@ -184,7 +184,7 @@ const RoomHome = () => {
                         style={{aspectRatio:'3/2'}}
                     />{" "}
             <div className="card-body">
-                <h5 className="card-title"><a href="/Room">Maharaja Luxury suite</a></h5>
+                <h4 className="card-title"><a href="/Room">Maharaja Luxury suite</a></h4>
                 <p>
                 Indulge in luxury with our Maharaja Suite, featuring exquisite decor and personalized service fit for royalty.
               </p>
