@@ -207,7 +207,7 @@ const Restaurant = () => {
         {/* Testiominals */}
         <section className="rooms-page section-padding" data-scroll-index={1}>
             <div className="container">
-            <div className="row">
+            <div className="row rev">
                 <div className="col-md-6">
                 <p className="mb-30">
                     For a sophisticated time, head here. It's perfect for meetings
