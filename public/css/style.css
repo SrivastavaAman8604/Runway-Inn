@@ -3147,6 +3147,10 @@ hr {
   }  
 }
 @media screen and (max-width: 480px) {
+    .rooms-page .rev{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .facilties .single-facility {
         padding: 5px 5px;
         border-right: none;
