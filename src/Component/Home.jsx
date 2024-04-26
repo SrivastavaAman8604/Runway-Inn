@@ -114,35 +114,16 @@ const Home = () => {
             </div>
         </header>
         {/* About */}
-        <section className="about section-padding imageabout">
+        <section className="rooms-page about section-padding2 imageabout ">
             <div className="container">
-            <div className="row">
-                <img  src="img/New image/Vns_airport.jpg" className='mobimg mb-5'/>
-                <div
+            <div className="row rev">
+                {/* <img  src="img/New image/Vns_airport.jpg" className='mobimg mb-5'/> */}
+                <div        
                 className="col-md-8 mb-30 animate-box"
                 data-animate-effect="fadeInUp"
                 >
-                {/* <span>
-                        <i class="star-rating"></i>
-                        <i class="star-rating"></i>
-                        <i class="star-rating"></i>
-                        <i class="star-rating"></i>
-                    </span>
-                <div className="section-subtitle">Airport Hotel in Varanasi </div>
-                <div className="section-title">Enjoy a Luxury Experience 
-                
-                    </div>
-                
-                <p>
-                <strong>Hotel Runway Inn</strong>, conveniently located just outside Lal Bahadur Shastri International Airport in Varanasi, caters to both business and leisure travelers. Our commitment to hospitality excellence shines through our array of <strong>top-tier amenities and services</strong>, ensuring every guest's stay is marked by unparalleled comfort and satisfaction.</p>
-                    
-                <p>
-                Sleek style, plush furnishings, and modern decor combine to create an unforgettable stay at Hotel Runway Inn. Each of our 31 contemporary designed well-appointed rooms and suites offer incredible views. Enjoy all conveniences and select from Economy, Premium Economy, Business Class, and Maharaja Suite. Plus, revel in the delightful culinary experience at our rooftop restaurant Aqua Lounge, boasting a swimming pool and ample seating area perfect for small parties.
-                </p>
-                <p>With a <strong>4.5-star rating on Google</strong>, our dedication to providing exceptional hospitality is recognized and celebrated by our valued guests.</p>
-                 */}
-                 <div className="section-title abt">Ready discover a haven just outside Lal Bahadur Shastri International Airport in Varanasi?</div>
-                 <p> Ready to embark on a journey of comfort and luxury. Welcome to Hotel Runway Inn,your gateway to Varanasi's spiritual allure! Step into modern elegance in rooms and suites, offering stunning views and a range of options from Economy to Maharaja Suite.Indulge in culinary delights at our rooftop Aqua Lounge, where a swimming pool and scenic vistas await.</p>
+                 <div className="section-title abt">Discover comfort just outside Lal Bahadur Shastri International Airport in Varanasi</div>
+                 <p>Welcome to Hotel Runway Inn,your gateway to Varanasi's spiritual allure! Step into modern elegance in rooms and suites, offering stunning views and a range of options from Economy to Maharaja Suite. Indulge in culinary delights at our restaurant Simply Benares or relax at our rooftop Aqua Lounge, where a swimming pool and scenic vistas await.</p>
 
                  <p>With a stellar <strong>4.5-star rating on Google</strong>, join us for an unforgettable stay marked by unparalleled comfort and satisfaction!</p>
 
@@ -155,20 +136,29 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                    {/* <img
+                    src="img/1.jpg"
+                    alt=""
+                    className=""
+                /><img
+                src="img/2.jpg"
+                alt=""
+                className=""
+            /> */}
                 <div
-                className="col col-md-6 animate-box"
+                className="col col-md-4 animate-box"
                 data-animate-effect="fadeInUp"
                 >
-                {/* <img
-                    src="img/images/Gallery Edited/1-1.jpg"
+                <img
+                    src="img/1-Copy.jpg"
                     alt=""
-                    className="mt-90 mb-30"
-                /> */}
-                {/* <img
-                    src="img/New image/Vns_airport.jpg"
+                    className="mb-5"
+                />  
+                <img
+                    src="img/vns1.png"
                     alt=""
-                    className="mt-90 mb-30"
-                /> */}
+                    className="ms-5 ps-5  mobview"
+                />
                 </div>
                 
             </div>
@@ -180,7 +170,7 @@ const Home = () => {
             <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                <div className="section-subtitle">The Runway Inn Luxury Hotel</div>
+                <div className="section-subtitle">Hotel Runway Inn</div>
                 <div className="section-title">Rooms &amp; Suites</div>
                 </div>
             </div>
@@ -549,7 +539,7 @@ const Home = () => {
                 >
                     <span className="flaticon-car" />
                     <h5>Parking Space</h5>
-                    <p>The hotel Runway Inn provides convenient parking space.</p>
+                    <p>Hotel Runway Inn provides convenient parking space.</p>
                     <div className="facility-shape">
                     {" "}
                     <span className="flaticon-car" />{" "}
@@ -562,7 +552,7 @@ const Home = () => {
                     <span className="flaticon-bed" />
                     <h5>Room Service</h5>
                     <p>
-                    The hotel Runway Inn offers efficient room service for a
+                    Hotel  Runway Inn offers efficient room service for a
                     comfortable and enjoyable stay.
                     </p>
                     <div className="facility-shape">
@@ -580,7 +570,7 @@ const Home = () => {
                     <span className="flaticon-wifi" />
                     <h5>Fibre Internet</h5>
                     <p>
-                    The hotel offers high-speed fiber internet services for seamless
+                    Hotel offers high-speed fiber internet services for seamless
                     and fast connectivity.
                     </p>
                     <div className="facility-shape">

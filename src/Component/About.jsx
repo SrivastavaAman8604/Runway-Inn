@@ -14,7 +14,7 @@ const About = () => {
                     <i className="star-rating" />
                     <i className="star-rating" />
                 </span>
-                <h5>The Runway Inn Hotel</h5>
+                <h5>Hotel Runway Inn </h5>
                 <h1>About</h1>
                 </div>
             </div>
@@ -34,7 +34,7 @@ const About = () => {
                             <i class="star-rating"></i>
                             <i class="star-rating"></i>
                         </span> */}
-                    <div className="section-subtitle">The Runway Inn Luxury Hotel</div>
+                    <div className="section-subtitle">Hotel Runway Inn</div>
                     <div className="section-title">Enjoy a Luxury Experience</div>
                     <p>
                     Hotel Runway Inn is conveniently located just outside Lal Bahadur

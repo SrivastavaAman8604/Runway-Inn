@@ -17,7 +17,7 @@ const Award = () => {
             <i className="star-rating" />
             <i className="star-rating" />
           </span>
-          <h5>The Runway Inn Hotel</h5>
+          <h5>Hotel Runway Inn</h5>
           <h1>Awards & Achievements</h1>
         </div>
       </div>

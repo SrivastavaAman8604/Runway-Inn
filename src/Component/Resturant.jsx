@@ -110,7 +110,7 @@ const Restaurant = () => {
             <div className="row">
                 <div className="col-md-12 text-center">
                 <div className="section-subtitle">
-                    <span>Luxury Hotel Runway Inn</span>
+                    <span>Hotel Runway Inn</span>
                 </div>
                 <div className="section-title">
                     <span>Chef's Recommendations</span>
@@ -205,10 +205,10 @@ const Restaurant = () => {
             </div>
         </section>
         {/* Testiominals */}
-        <section className="rooms-page section-padding" data-scroll-index={1}>
+        <section className="rooms-page section-padding " data-scroll-index={1}>
             <div className="container">
             <div className="row rev">
-                <div className="col-md-6">
+                <div className="col-md-6 ">
                 <p className="mb-30">
                     For a sophisticated time, head here. It's perfect for meetings
                     between business partners, colleagues and friends. Explore the roof
@@ -252,20 +252,20 @@ const Restaurant = () => {
                     <p>Open for drinks only</p> */}
                 </div>
                 <div className="col-md-6 text-left">
-                <span>
-                    <i className="star-rating" />
-                    <i className="star-rating" />
-                    <i className="star-rating" />
-                    <i className="star-rating" />
-                </span>
-                <div className="section-subtitle">
-                    Unforgettable Cuisine while Dining
-                </div>
-                <div className='d-flex'>
-                    <div className="section-title ">Aqua Lounge</div>
-                    <img src="img/images/restaurant/aqua.png" alt="" className="ms-5 w-25 h-25" />
-                </div>
-                <img src="img/images/restaurant/resturant-Copy.png" alt="" className="mt-30 mb-30" />
+                    <span>
+                        <i className="star-rating" />
+                        <i className="star-rating" />
+                        <i className="star-rating" />
+                        <i className="star-rating" />
+                    </span>
+                    <div className="section-subtitle">
+                        Unforgettable Cuisine while Dining
+                    </div>
+                    <div className='d-flex'>
+                        <div className="section-title ">Aqua Lounge</div>
+                        <img src="img/images/restaurant/aqua.png" alt="" className="ms-5 w-25 h-25" />
+                    </div>
+                    <img src="img/images/restaurant/resturant-Copy.png" alt="" className="mt-30 mb-30" />
                 </div>
             </div>
             </div>
