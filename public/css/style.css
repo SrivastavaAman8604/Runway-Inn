@@ -3147,6 +3147,10 @@ hr {
   }  
 }
 @media screen and (max-width: 480px) {
+    
+    .mobview{
+        display: none;
+    }
     .rooms-page .rev{
         display: flex;
         flex-direction: column-reverse;
@@ -5582,9 +5586,11 @@ select {
 }
 
 .about.imageabout{
-    background-image: url("../img/New image/vr-bg.png");
+    /* background-image: url("../img/New image/vr-bg.png"); */
+    background-image: url("../img/1.1-Copy.jpg");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: center;
+    background-size: cover;
 }
 .mobimg{
     display: none;
@@ -5593,3 +5599,7 @@ select {
  .border-right{
     border-right: 1px solid #f1eeeb;
  } 
+
+ .section-padding2{
+    padding: 120px 0 ;
+ }
