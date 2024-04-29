@@ -1,54 +1,59 @@
+// import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import {Routes,Route,BrowserRouter as Router} from 'react-router-dom';
-import Header from './Component/Header';
-import Footer from './Component/Footer';
-import Home from './Component/Home';
-// import Form from './Component/Form';
-// import About from './Component/About';
-import Room from './Component/Room';
-import Restaurant from './Component/Resturant';
-import Contact from './Component/Contact';
-import Tariff from './Component/Tariff';
-import Gallery from './Component/Gallery';
-// import Map from './Component/Map';
-import Award from './Component/Award';
-import Banquet from './Component/Banquet';
-import Aqua from './Component/Aqua';
-import Baneras from './Component/Baneras';
-import Button from './Component/Button';
-import SatvikBhoj from './Component/SatvikBhoj';
-import { Helmet } from 'react-helmet'
+import Header from './component/Header';
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import Home from './component/Home';
+import Destinations from './Pages/Destinations';
+import Passion from './Pages/Passion';
+import Footer from './component/Footer';
+import Packages from './Pages/Packages';
+import Testimonial from './Pages/Testimonial';
+import Blog from './Pages/Blog';
+import Conscious from './Pages/Conscious';
+import WBlog from './Pages/WBlog';
+import Affiliation from './component/Affiliation';
+import PackageDetail from './Pages/PackageDetail';
+import TestimonialDetail from './Pages/TestimonialDetail';
+import TravelBlogDetail from './Pages/TravelBlogDetail';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import TermsOfServices from './Pages/TermsOfServices';
+import RefundPolicy from './Pages/RefundPolicy';
+import YEarthyhues from './Pages/YEarthyhues';
+import OurStory from './Pages/OurStory';
+import FeedBack from './Pages/FeedBack';
+
 
 function App() {
+
   return (
     <Router>
-      <Header/>
-      <Helmet>
-            <meta charSet="utf-8" />
-            <title>Hotel Runway Inn - Best Hotel in Varanasi Near Babatpur Airport</title>
-            <meta name="description" content="Prepare for a runway-worthy stay at Hotel Runway Inn, your cozy oasis just a skip away from Varanasi's Lal Bahadur Shastri International Airport. Come on in and let us pamper you with warmth and comfort for a truly delightful Varanasi adventure." />
-            <link rel="canonical" href="https://www.hotelrunwayinn.com" />
-            <meta name='keywords' content="Varanasi Airport Hotel, Varanasi Business Hotel, Hotels near Airport, Varanasi Airport Road, Hotel Runway Inn, hotel runway inn varanasi, runway hotel, hotels near varanasi airport, runway restaurant, hotels near airport varanasi, the runway hotel, varanasi hotel near airport, hotels near babatpur airport, modern hotel varanasi, banaras airport name, varanasi stay options, hotel garden inn varanasi, hotels in varanasi near airport, varanasi hotel contact number, hotel runway suites, hotels in varanasi with swimming pool, restaurants in varanasi india, runway cafe, restaurant for couples in varanasi, hotel varanasi inn, rooftop restaurants varanasi, varanasi airport lounge, banaras airport code, lounge in varanasi airport, hotel modern varanasi, hotel varanasi contact number, varanasi nearest airport, hotel varanasi inn varanasi uttar pradesh, restaurant close to airport, lbs airport, varanasi babatpur airport, babatpur hotel, hotels in babatpur varanasi, lounge at varanasi airport, varanasi to airport, hotel in babatpur varanasi, rooftop restaurant varanasi, hotel runway inn ahmedabad, swimming pool hotel in varanasi, restaurant at varanasi, international hotel varanasi" />
-
-        </Helmet>
+      <Header style={{backgroundColor: '#2D2330'}}/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/tariff' element={<Tariff/>}/>
-        {/* <Route path='/room' element={<Room/>}/> */}
-        <Route path='/room/*' element={<Room/>}/>
-        <Route path='/restaurant' element={<Restaurant/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/gallery' element={<Gallery/>}/>
-        <Route path='/awards-and-achievements' element={<Award/>}/>
-        <Route path='/banquet' element={<Banquet/>}/>
-        <Route path='/aqua-lounge' element={<Aqua/>}/>
-        <Route path='/simply-benaras' element={<Baneras/>}/>
-        <Route path='/SatvikBhoj' element={<SatvikBhoj/>}/>
+        {/* <Route path='/destinations/' element={<Destinations/>}/> */}
+        <Route path="/destinations/:destination_id" element={<Destinations/>} />
+        {/* <Route path='/passion/' element={<Passion/>}/> */}
+        <Route path='/passion/:passion_id' element={<Passion/>}/>
+        <Route path='/packages' element={<Packages/>}/>
+        <Route path='/packages/:package_id' element={<PackageDetail/>}/>
+        {/* <Route path='/packages' element={<PackageDetail/>}/> */}
+        <Route path='/testimonial' element={<Testimonial/>}/>
+        <Route path='/testimonial/:testimonials_id' element={<TestimonialDetail/>}/>
+        {/* <Route path='/testimonialDetail' element={<TestimonialDetail/>}/> */}
+        <Route path='/conscious-travel' element={<Conscious/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+        <Route path='/blog/:travel_blog_id' element={<TravelBlogDetail/>}/>
+        <Route path='/write-a-blog' element={<WBlog/>}/>
+        <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
+        <Route path='/TermsOfServices' element={<TermsOfServices/>}/>
+        <Route path='/RefundPolicy' element={<RefundPolicy/>}/>
+        <Route path='/Why-EarthyHues' element={<YEarthyhues/>}/>
+        <Route path='/Our-story' element={<OurStory/>}/>
+        <Route path='/feedback' element={<FeedBack/>}/>
       </Routes>
-      {/* <Form/> */}
-      {/* <Map/> */}
+      <Affiliation/>
       <Footer/>
-      <Button/>
     </Router>
   );
 }
