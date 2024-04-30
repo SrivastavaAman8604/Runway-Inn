@@ -1,6 +1,7 @@
 {
   "name": "runwayinn",
-  "homepage": "https://www.hotelrunwayinn.com/",
+  //"homepage": "https://www.hotelrunwayinn.com/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
