@@ -3,82 +3,55 @@ import React from 'react'
 const About = () => {
   return (
     <>
-    <div className="banner-header section-padding valign bg-img bg-fixed"  data-overlay-dark={6}  data-background="img/images/banner/1.webp">
-        <div className="container">
-            <div className="row">
-                <div className="col-md-12 caption mt-90">
-                <span>
-                    <i className="star-rating" />
-                    <i className="star-rating" />
-                    <i className="star-rating" />
-                    <i className="star-rating" />
-                    <i className="star-rating" />
-                </span>
-                <h5>Hotel Runway Inn </h5>
-                <h1>About</h1>
-                </div>
-            </div>
-        </div>
-        </div>
-        <section className="about section-padding">
+    <section className="rooms-page about section-padding2 imageabout ">
             <div className="container">
-                <div className="row">
-                <div
-                    className="col-md-6 mb-30 animate-box"
-                    data-animate-effect="fadeInUp"
+            <div className="row rev">
+                {/* <img  src="img/New image/Vns_airport.jpg" className='mobimg mb-5'/> */}
+                <div        
+                className="col-md-8 mb-30 animate-box"
+                data-animate-effect="fadeInUp"
                 >
-                    {/* <span>
-                            <i class="star-rating"></i>
-                            <i class="star-rating"></i>
-                            <i class="star-rating"></i>
-                            <i class="star-rating"></i>
-                            <i class="star-rating"></i>
-                        </span> */}
-                    <div className="section-subtitle">Hotel Runway Inn</div>
-                    <div className="section-title">Enjoy a Luxury Experience</div>
-                    <p>
-                    Hotel Runway Inn is conveniently located just outside Lal Bahadur
-                    Shastri International Airport, Varanasi and is well suited to business
-                    and leisure travelers. Guests return to the upscale furnishings found
-                    in our contemporary rooms and suites, after a busy day and take time
-                    to indulge in our world class amenities and services.
-                    </p>
-                    <p>
-                    Sleek style, plush furnishings and modern decor combine to create an
-                    unforgettable stay at Hotel Runway Inn. Each of our 31 contemporary
-                    designed well-appointed rooms and suites offer incredible views.Enjoy
-                    all conveniences and select from Economy, Premium Economy, Business
-                    Class and Maharaja Suite. Enjoy our roof top Swimming Pool with Green
-                    lawns and indulge in the open dining area, relishing the ambience
-                    &amp; beauty.
-                    </p>
-                    {/* call */}
+                 <div className="section-title abt">Discover comfort just outside Lal Bahadur Shastri International Airport in Varanasi</div>
+                 <p>Welcome to Hotel Runway Inn,your gateway to Varanasi's spiritual allure! Step into modern elegance in rooms and suites, offering stunning views and a range of options from Economy to Maharaja Suite. Indulge in culinary delights at our restaurant Simply Benares or relax at our rooftop Aqua Lounge, where a swimming pool and scenic vistas await.</p>
+
+                 <p>With a stellar <strong>4.5-star rating on Google</strong>, join us for an unforgettable stay marked by unparalleled comfort and satisfaction!</p>
+
                     <div className="reservations">
-                    <div className="icon">
+                        <div className="icon">
                         <span className="flaticon-call" />
-                    </div>
-                    <div className="text">
+                        </div>
+                        <div className="text">
                         <p>Reservation</p> <a href="tel:93058 04900">93058 04900</a>
-                    </div>
+                        </div>
                     </div>
                 </div>
-                {/* <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                        <img src="img/rooms/8.jpg" alt="" class="mt-90 mb-30">
-                    </div>
-                    <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                        <img src="img/rooms/2.jpg" alt="">
-                    </div> */}
-                <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img
-                    src="img/images/Gallery Edited/2-1.png"
+                    {/* <img
+                    src="img/1.jpg"
                     alt=""
-                    className="mt-90 mb-30"
-                    />
+                    className=""
+                /><img
+                src="img/2.jpg"
+                alt=""
+                className=""
+            /> */}
+                <div
+                className="col col-md-4 animate-box"
+                data-animate-effect="fadeInUp"
+                >
+                <img
+                    src="img/1-Copy.jpg"
+                    alt=""
+                    className="mb-5"
+                />  
+                <img
+                    src="img/vns1.png"
+                    alt=""
+                    className="ms-5 ps-5  mobview"
+                />
                 </div>
-                <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img src="img/images/Gallery Edited/1.png" alt="" />
-                </div>
-                </div>
+                
+            </div>
+            
             </div>
         </section>
     </>

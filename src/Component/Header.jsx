@@ -96,17 +96,17 @@ const Header = () => {
         </li> */}
         <li className="nav-item dropdown" onClick={toggleRestaurantDropdown}>
               <span className="nav-link link">
-                <span className="nav-link1"><Link to='/restaurant'>Dining</Link></span>
+                <span className="nav-link1"><Link to='/restaurant' onClick={scrollToTop}>Dining</Link></span>
                 <i className={`ti-angle-down mob dropdown-toggle`} />
               </span>
               <ul className={`dropdown-menu ${isRestaurantDropdownOpen ? 'show' : ''}`}>
-                <li className="dropdown-item nav-link1">
+                <li className="dropdown-item nav-link1" onClick={scrollToTop}>
                   <Link to="/aqua-lounge">Aqua Lounge</Link>
                 </li>
-                <li className="dropdown-item nav-link1">
+                <li className="dropdown-item nav-link1" onClick={scrollToTop}>
                   <Link to="/simply-benaras">Simply Benares</Link>
                 </li>
-                <li className="dropdown-item nav-link1">
+                <li className="dropdown-item nav-link1" onClick={scrollToTop}>
                   <Link to="/SatvikBhoj">Satvik Bhoj</Link>
                 </li>
               </ul>

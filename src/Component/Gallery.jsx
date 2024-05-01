@@ -135,7 +135,7 @@ const Gallery = () => {
           </a>
         </div>
         <div className="col-md-4 gallery-item">
-          <a href="img/rooms/10.jpg" title="" className="img-zoom">
+          <a href="img/slider/banner-4.webp" title="" className="img-zoom">
             <div className="gallery-box">
               <div className="gallery-img">
                 {" "}
@@ -245,6 +245,20 @@ const Gallery = () => {
                 {" "}
                 <img
                   src="img/images/restaurant/2-Copy.png"
+                  className="img-fluid mx-auto d-block"
+                  alt="work-img"
+                />{" "}
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="col-md-4 gallery-item">
+          <a href="img/images/Gallery Edited/1.png" title="" className="img-zoom">
+            <div className="gallery-box">
+              <div className="gallery-img">
+                {" "}
+                <img
+                  src="img/images/Gallery Edited/1.png"
                   className="img-fluid mx-auto d-block"
                   alt="work-img"
                 />{" "}
