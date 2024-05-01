@@ -3,22 +3,11 @@ import React, { useState, useEffect } from 'react';
 import {Helmet} from "react-helmet";
 import RoomHome from './RoomHome';
 import Banner from './Banner';
-import About from './About';
+// import About from './About';
 import Facilities from './Facilities';
-import Loader from './Loader';
 
 const Home = () => {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-      // Simulate loading time
-      const timer = setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-  
-      return () => clearTimeout(timer);
-    }, []);
-
+    
   return (
     <>
     
@@ -28,14 +17,64 @@ const Home = () => {
             <meta name="description" content="Prepare for a runway-worthy stay at Hotel Runway Inn, your cozy oasis just a skip away from Varanasi's Lal Bahadur Shastri International Airport. Come on in and let us pamper you with warmth and comfort for a truly delightful Varanasi adventure." />
             <link rel="canonical" href="https://www.hotelrunwayinn.com" />
         </Helmet>
-        {loading && <Loader />}
         
         {/* Banner */}
         {<Banner />}
         {/* Banner End */}
 
         {/* About */}
-        <About />
+        {/* <About /> */}
+        <section className="rooms-page about section-padding2 imageabout ">
+            <div className="container">
+            <div className="row rev">
+                {/* <img  src="img/New image/Vns_airport.jpg" className='mobimg mb-5'/> */}
+                <div        
+                className="col-md-8 mb-30 animate-box"
+                data-animate-effect="fadeInUp"
+                >
+                 <div className="section-title abt">Discover comfort just outside Lal Bahadur Shastri International Airport in Varanasi</div>
+                 <p>Welcome to Hotel Runway Inn,your gateway to Varanasi's spiritual allure! Step into modern elegance in rooms and suites, offering stunning views and a range of options from Economy to Maharaja Suite. Indulge in culinary delights at our restaurant Simply Benares or relax at our rooftop Aqua Lounge, where a swimming pool and scenic vistas await.</p>
+
+                 <p>With a stellar <strong>4.5-star rating on Google</strong>, join us for an unforgettable stay marked by unparalleled comfort and satisfaction!</p>
+
+                    <div className="reservations">
+                        <div className="icon">
+                        <span className="flaticon-call" />
+                        </div>
+                        <div className="text">
+                        <p>Reservation</p> <a href="tel:93058 04900">93058 04900</a>
+                        </div>
+                    </div>
+                </div>
+                    {/* <img
+                    src="img/1.jpg"
+                    alt=""
+                    className=""
+                /><img
+                src="img/2.jpg"
+                alt=""
+                className=""
+            /> */}
+                <div
+                className="col col-md-4 animate-box"
+                data-animate-effect="fadeInUp"
+                >
+                <img
+                    src="img/1-Copy.jpg"
+                    alt=""
+                    className="mb-5"
+                />  
+                <img
+                    src="img/vns1.png"
+                    alt=""
+                    className="ms-5 ps-5  mobview"
+                />
+                </div>
+                
+            </div>
+            
+            </div>
+        </section>
         {/* About End */}
 
         {/* Rooms */}
